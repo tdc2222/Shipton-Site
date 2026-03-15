@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Chasing Rabbits — SHIPTON</title>
+<title>Valhalla — SHIPTON</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <style>
@@ -13,7 +13,11 @@
 --header-h:120px;
 }
 
-*{box-sizing:border-box;margin:0;padding:0;}
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
 body{
 font-family:serif;
@@ -37,17 +41,17 @@ z-index:200;
 mix-blend-mode:difference;
 }
 
-footer{
-margin-top:200px;
-padding:40px 48px;
-border-top:1px dashed rgba(0,0,0,0.25);
-font-size:14px;
-line-height:1.6;
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-footer strong{
-font-family:var(--sans);
-font-weight:700;
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
 }
 
 .logo{
@@ -72,6 +76,11 @@ letter-spacing:-0.015em;
 text-decoration:none;
 color:#fff;
 opacity:0.9;
+transition:opacity .2s ease;
+}
+
+.top-actions a:hover{
+opacity:1;
 }
 
 /* LAYOUT */
@@ -86,6 +95,7 @@ height:100vh;
 .text-column{
 height:100vh;
 overflow-y:auto;
+overscroll-behavior:contain;
 padding-top:var(--header-h);
 }
 
@@ -146,6 +156,11 @@ margin-bottom:40px;
 
 body{overflow:auto;}
 
+header{
+position:sticky;
+background:transparent;
+}
+
 main{
 grid-template-columns:1fr;
 height:auto;
@@ -154,16 +169,20 @@ height:auto;
 .text-column{
 order:1;
 height:auto;
+overflow:visible;
 padding:32px;
 }
 
 .image-column{
 order:2;
 height:auto;
+overflow:visible;
 padding:32px;
 }
 
-.title{font-size:3rem;}
+.title{
+font-size:3rem;
+}
 
 }
 </style>
@@ -172,7 +191,7 @@ padding:32px;
 <body>
 
 <header>
-<a href="../works.html" class="logo">SHIPTON</a>
+<a href="../index.html" class="logo">SHIPTON</a>
 
 <nav class="top-actions">
 <a href="../about.html">About</a>
@@ -186,83 +205,123 @@ padding:32px;
 <section class="image-column">
 
 <figure>
-<img src="/Yeah/images/ChasingRabbits/1.webp">
+<img src="/Images/Valhalla/1.webp">
 <figcaption>
-<em>An Ideal world</em>, 80 x 80 cm, oil on hessian, 2023
+Harry Hugo Little, <em>Rose2</em>, 2024<br>
+Oil on Wood,<br>
+55 × 30 cm
 </figcaption>
 </figure>
 
 <figure>
-<img src="/Yeah/images/ChasingRabbits/2.webp">
+<img src="/Images/Valhalla/2.webp">
 <figcaption>
-<em>Chasing Rabbits</em>, 70 x 55cm, oil on canvas, 2023
+Harry Hugo Little, <em>Dove</em>, 2024<br>
+Oil on Wood,<br>
+48 × 30 cm
 </figcaption>
 </figure>
 
 <figure>
-<img src="/Yeah/images/ChasingRabbits/3.webp">
+<img src="/Images/Valhalla/3.webp">
 <figcaption>
-<em>Fuse</em>, 100 x 100 cm, oil on canvas, 2023
+Fjorsk, <em>Witch I</em>, 2024<br>
+Acrylic & Lacquer on Canvas<br>
+75 × 35 cm
 </figcaption>
 </figure>
 
 <figure>
-<img src="/Yeah/images/ChasingRabbits/4.webp">
+<img src="/Images/Valhalla/4.webp">
 <figcaption>
-<em>Spell Bound</em>, 100 x 100 cm, oil on canvas, 2023
+Fjorsk, <em>Witch II</em>, 2024<br>
+Acrylic & Lacquer on Canvas<br>
+75 × 35 cm
 </figcaption>
 </figure>
 
 <figure>
-<img src="/Yeah/images/ChasingRabbits/5.webp">
+<img src="/Images/Valhalla/5.webp">
 <figcaption>
-<em>Don’t Look Back into the Sun</em>, 80 x 60 cm, oil on canvas, 2023
+Harry Hugo Little, <em>Skull3</em>, 2024<br>
+Oil on Wood<br>
+50 × 30 cm
 </figcaption>
 </figure>
 
 <figure>
-<img src="/Yeah/images/ChasingRabbits/6.webp">
+<img src="/Images/Valhalla/6.webp">
 <figcaption>
-<em>Omen</em>, 40 x 30 cm oil on canvas, 2023
+Harry Hugo Little, <em>Pistol</em>, 2024<br>
+Oil on Wood,<br>
+51 × 30 cm
 </figcaption>
 </figure>
 
 <figure>
-<img src="/Yeah/images/ChasingRabbits/7.webp">
+<img src="/Images/Valhalla/7.webp">
 <figcaption>
-<em>Heavy Eyes Purple Skies</em>, 40 x 30 cm, oil on hessian, 2023
+Fjorsk, <em>Doe</em>, 2024<br>
+Acrylic and Lacquer on Canvas<br>
+65 × 40 cm
 </figcaption>
 </figure>
 
 <figure>
-<img src="/Yeah/images/ChasingRabbits/8.webp">
+<img src="/Images/Valhalla/8.webp">
 <figcaption>
-<em>Night Ride</em>, 120 x 80 cm, oil on canvas, 2023
+Fjorsk, <em>Amnesia</em>, 2024<br>
+Indian Ink on Canvas<br>
+80 × 60 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Images/Valhalla/9.webp">
+<figcaption>
+Left:<br>
+Harry Hugo Little, <em>Deer</em>, 2024<br>
+Oil on Wood,<br>
+113 cm × 53 cm<br><br>
+
+Right:<br>
+Fjorsk, <em>Witch III</em>, 2024<br>
+Acrylic & Lacquer on Canvas<br>
+75 × 35 cm
 </figcaption>
 </figure>
 
 </section>
 
+
 <section class="text-column">
 
-<h1 class="title">Chasing Rabbits</h1>
+<h1 class="title">Valhalla</h1>
 
 <p class="subtitle">
-Mark Burch
+Harry Hugo Little & Fjorsk
 </p>
 
 <div class="section">
 
 <p>
-‘Chasing Rabbits’ explores the mind's tendency to wander, replaying selective thoughts in a dreamlike, filmic loop. Centred around nostalgia, desire and fear, the works in this exhibition originate from VHS footage, found imagery and personal captures that Burch has intricately edited or collaged.
+Shipton is delighted to present ‘Valhalla’; a duo show featuring work by Harry Hugo Little & Fjorsk. This exhibition invites visitors to reflect on their personal quests for honour and glory.
 </p>
 
 <p>
-To Burch, the VHS medium's glitches and colour distortions symbolise the mind's imperfect recall where silhouettes and scenes from the past become fleeting yet significant mental imprints. With their grainy, ethereal qualities, his paintings serve as a metaphorical lens that deliberately obscures details to mirror the way in which digital technologies can be corrupted or lost.
+Central to the exhibition is the symbolism of the doe. This imagery encapsulates the concepts of sacrifice and the predator-prey dynamic, reflecting the tension between vulnerability and strength.
 </p>
 
 <p>
-Burch was born in Trowbridge, Wiltshire in 1996. In 2017, he completed his BA in Fine Art at Southampton Solent before an MA in Fine Art at Bath Spa University in 2020. After participating in Bath Spa's Emerge residency, he moved to London in 2023.
+The doe, often seen as a gentle and vulnerable creature, also embodies resilience and survival. This duality mirrors the journey to Valhalla, where the path to glory is fraught with challenges that requires both inner strength and sacrifice.
+</p>
+
+<p>
+The exhibition challenges visitors to consider their own lives in this context. Are they living in a way that pursues honor and glory? What sacrifices are they willing to make?
+</p>
+
+<p>
+By contemplating these questions, viewers engage with the timeless narrative of the hero’s journey and the pursuit of a meaningful, honourable life.
 </p>
 
 </div>

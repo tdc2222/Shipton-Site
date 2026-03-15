@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>The Bogman — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root{
+--text:#1f120c;
+--bg:#ffffff;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+--header-h:120px;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:serif;
+background:var(--bg);
+color:var(--text);
+overflow:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:36px 48px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:200;
+mix-blend-mode:difference;
+}
+
+footer{
+margin-top:200px;
+padding:40px 48px;
+border-top:1px dashed rgba(0,0,0,0.25);
+font-size:14px;
+line-height:1.6;
+}
+
+footer strong{
+font-family:var(--sans);
+font-weight:700;
+}
+
+.logo{
+font-family:var(--sans);
+font-size:18px;
+font-weight:700;
+letter-spacing:-0.03em;
+text-decoration:none;
+color:#fff;
+}
+
+.top-actions{
+display:flex;
+gap:28px;
+}
+
+.top-actions a{
+font-family:var(--sans);
+font-size:15px;
+font-weight:700;
+letter-spacing:-0.015em;
+text-decoration:none;
+color:#fff;
+opacity:0.9;
+}
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:100vh;
+}
+
+.image-column,
+.text-column{
+height:100vh;
+overflow-y:auto;
+padding-top:var(--header-h);
+}
+
+.image-column{
+padding-left:32px;
+padding-right:32px;
+padding-bottom:32px;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
+
+.image-column img{
+width:100%;
+display:block;
+border-radius:6px;
+}
+
+figcaption{
+font-size:12px;
+line-height:1.4;
+margin-top:8px;
+}
+
+.text-column{
+padding-left:48px;
+padding-right:48px;
+padding-bottom:48px;
+}
+
+.title{
+font-family:var(--sans);
+font-size:clamp(4.5rem,10vw,8rem);
+line-height:0.95;
+letter-spacing:-0.04em;
+margin-bottom:24px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:32px;
+}
+
+.section{
+max-width:52ch;
+font-size:14px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+@media(max-width:900px){
+
+body{overflow:auto;}
+
+main{
+grid-template-columns:1fr;
+height:auto;
+}
+
+.text-column{
+order:1;
+padding:32px;
+}
+
+.image-column{
+order:2;
+padding:32px;
+}
+
+.title{
+font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../index.html" class="logo">SHIPTON</a>
+
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<section class="image-column">
+
+<figure>
+<img src="/images/Bogman/1.webp">
+<figcaption>
+<em>The Porridge Eater</em>, 120 x 90 cm, oil on canvas, 2023
+</figcaption>
+</figure>
+
+<figure>
+<img src="/images/Bogman/2.webp">
+<figcaption>
+<em>Harvest</em>, 120 x 90 cm, oil on canvas, 2023
+</figcaption>
+</figure>
+
+<figure>
+<img src="/images/Bogman/3.webp">
+<figcaption>
+<em>Burial/Bloom</em>, 120 x 90 cm, oil on canvas, 2023
+</figcaption>
+</figure>
+
+<figure>
+<img src="/images/Bogman/4.webp">
+<figcaption>
+<em>Resurrection</em>, 120 x 90 cm, oil on canvas, 2023
+</figcaption>
+</figure>
+
+<figure>
+<img src="/images/Bogman/5.webp">
+<figcaption>
+<em>Garden Party</em>, 120 x 90 cm, oil on canvas, 2023
+</figcaption>
+</figure>
+
+<figure>
+<img src="/images/Bogman/6.webp">
+<figcaption>
+<em>Gift Shop</em>, 50 x 40 cm, oil on canvas, 2023
+</figcaption>
+</figure>
+
+<figure>
+<img src="/images/Bogman/7.webp">
+<figcaption>
+<em>The Willowfield Man</em> collection of 8 paintings, sizes vary 15 x 15 cm to 40 x 50 cm, oil on canvas, 2023<br><br>
+
+<em>A Day at the Museum</em>, 60 x 45 cm, oil on canvas, 2023<br><br>
+
+<em>Cabinet of Curiosities</em>, 25 x 20 cm, oil on canvas, 2023
+</figcaption>
+</figure>
+
+</section>
+
+<section class="text-column">
+
+<h1 class="title">The Bogman</h1>
+
+<p class="subtitle">
+Lily Hargreaves
+</p>
+
+<div class="section">
+
+<p>
+'The Bogman' unveils a captivating series of paintings inspired by real-life bog bodies found in Northwestern Europe. As peat from bogs was historically used as fuel, increased demand during and after the Industrial Revolution led to extensive wetland excavation. Remarkably preserved corpses, often mistaken for recent burials, emerged from the unearthed land due to the bogs' unique conditions; high acidity, low moisture, and minimal oxygen, effectively mummifying typically biodegradable materials. Despite their ancient origins, many of these bodies appeared remarkably well-preserved.
+</p>
+
+<p>
+Hargreaves conceived this series with a fascination for the enigmatic bog bodies, aiming to depict them not merely as objects of curiosity but as figures with agency; time-travellers offering insight into a culture vastly different from our own. Her research prompted visits to renowned bog bodies in Ireland and Denmark, where she also painted several index for this exhibition. During this pilgrimage, the series shifted focus to explore society's morbid curiosity about these figures and its impact on the fate of the bog bodies, who have rested undisturbed for millennia. Now displayed behind cabinet glass, they raise questions about the duration of respect afforded to the deceased.
+</p>
+
+<p>
+Hargreaves was born in Reading, 2000, and is now based in London. In 2019, she completed a Foundation Diploma in Fine Art from Central St. Martins before moving to Goldsmiths for undergraduate study in the same subject. She is currently studying for her MA in Painting at the Royal College of Art. In 2022, Hargreaves was awarded the Tooth Travelling Scholarship as well as the BAGT Open Founder's Prize, and has also previously been shortlisted for the John Moores Painting Prize.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>
