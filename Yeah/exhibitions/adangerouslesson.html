@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>A Dangerous Lesson — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root{
+--text:#1f120c;
+--bg:#ffffff;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+--header-h:120px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+font-family:serif;
+background:var(--bg);
+color:var(--text);
+overflow:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:36px 48px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:200;
+mix-blend-mode:difference;
+}
+
+footer{
+margin-top:200px;
+padding:40px 48px;
+border-top:1px dashed rgba(0,0,0,0.25);
+font-size:14px;
+line-height:1.6;
+}
+
+.logo{
+font-family:var(--sans);
+font-size:18px;
+font-weight:700;
+letter-spacing:-0.03em;
+text-decoration:none;
+color:#fff;
+}
+
+.top-actions{
+display:flex;
+gap:28px;
+}
+
+.top-actions a{
+font-family:var(--sans);
+font-size:15px;
+font-weight:700;
+text-decoration:none;
+color:#fff;
+opacity:.9;
+}
+
+/* LAYOUT */
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:100vh;
+}
+
+.image-column,
+.text-column{
+height:100vh;
+overflow-y:auto;
+padding-top:var(--header-h);
+}
+
+.image-column{
+padding:32px;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
+
+.image-column img{
+width:100%;
+display:block;
+border-radius:6px;
+}
+
+figcaption{
+font-size:12px;
+line-height:1.4;
+margin-top:8px;
+}
+
+/* TEXT */
+
+.text-column{
+padding:48px;
+}
+
+.title{
+font-family:var(--sans);
+font-size:clamp(4.5rem,10vw,8rem);
+line-height:.95;
+letter-spacing:-0.04em;
+margin-bottom:24px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:32px;
+}
+
+.section{
+max-width:52ch;
+font-size:14px;
+line-height:1.6;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+body{overflow:auto;}
+
+main{
+grid-template-columns:1fr;
+height:auto;
+}
+
+.text-column{
+order:1;
+height:auto;
+padding:32px;
+}
+
+.image-column{
+order:2;
+height:auto;
+padding:32px;
+}
+
+.title{font-size:3rem;}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../works.html" class="logo">SHIPTON</a>
+
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<section class="image-column">
+
+<figure>
+<img src="/Yeah/images/ADangerousLesson/1.webp">
+<figcaption>
+The Mountain Dweller, 2020<br>
+Acrylic on Canvas<br>
+100cm × 100cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/images/ADangerousLesson/2.webp">
+<figcaption>
+Left: Checkmate, 2021<br>
+Acrylic and Flashe on Canvas<br>
+60cm × 50cm<br><br>
+
+Right: A Dangerous Lesson, 2021<br>
+Acrylic on Canvas<br>
+60cm × 40cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/images/ADangerousLesson/3.webp">
+<figcaption>
+Left: Double Tap, 2020<br>
+Acrylic on Canvas<br>
+30cm × 40cm<br><br>
+
+Right: Likeable Communist Woman, 2020<br>
+Acrylic and Glitter on Canvas<br>
+120cm × 100 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/images/Adangerouslesson/4.webp">
+</figure>
+
+<figure>
+<img src="/Yeah/images/Adangerouslesson/5.webp">
+</figure>
+
+</section>
+<section class="text-column">
+
+<h1 class="title">A Dangerous Lesson</h1>
+
+<p class="subtitle">
+Michael Pybus
+</p>
+
+<div class="section">
+
+<p>
+Shipton is pleased to present <em>A Dangerous Lesson</em>, a solo exhibition by Michael Pybus.
+</p>
+
+<p>
+Pybus’ paintings operate in a space between narrative suggestion and painterly ambiguity. Figures and environments emerge through expressive gestures and layered surfaces, creating scenes that feel both familiar and unsettling.
+</p>
+
+<p>
+The works balance humour, melancholy and tension. Characters appear suspended within psychological landscapes, where objects, gestures and fragments of architecture act as emotional cues rather than literal descriptions.
+</p>
+
+<p>
+Through loose figuration and shifting spatial logic, Pybus constructs images that feel unstable yet intimate, inviting viewers to interpret scenes that remain intentionally unresolved.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

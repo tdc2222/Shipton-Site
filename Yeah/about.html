@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About — SHIPTON</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --text: #1f120c;
+      --bg: #ffffff;
+      --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      --header-h: 120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* ================= HEADER ================= */
+
+    header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 36px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+  mix-blend-mode: difference;
+}
+
+.logo {
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-actions {
+  display: flex;
+  gap: 28px;
+}
+
+.top-actions a {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.top-actions a:hover {
+  opacity: 1;
+}
+
+    /* ================= LAYOUT ================= */
+
+    main {
+      padding-top: var(--header-h);
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+
+    .title {
+      font-family: var(--sans);
+      font-size: clamp(4.5rem, 10vw, 8rem);
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      margin-bottom: 64px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      max-width: 1100px;
+    }
+
+    .about-grid p {
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 40ch;
+    }
+
+    .about-grid strong {
+      font-family: var(--sans);
+      font-weight: normal;
+      font-size: 13px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+/* ================= FOOTER ================= */
+
+
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+    /* ================= MOBILE SYSTEM (GLOBAL UNIFIED) ================= */
+
+@media (max-width: 900px) {
+
+  :root {
+    --header-h: 88px;
+  }
+
+  /* Header */
+
+  header {
+
+    position: fixed;
+
+    top: 0;
+
+    padding: 22px 24px;
+
+  }
+
+  .logo {
+
+    font-size: 16px;
+
+  }
+
+  .top-actions {
+
+    gap: 18px;
+
+  }
+
+  .top-actions a {
+
+    font-size: 14px;
+
+  }
+
+
+  /* Main layout */
+
+  main {
+
+    padding-top: calc(var(--header-h) + 24px);
+
+    padding-left: 24px;
+
+    padding-right: 24px;
+
+  }
+
+
+  /* Page titles */
+
+  .title {
+
+    font-size: clamp(2.6rem, 9vw, 3.2rem);
+
+    margin-bottom: 40px;
+
+  }
+
+
+  /* Grid layout → stack vertically */
+
+  .about-grid,
+  .press-grid,
+  .friends-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 36px;
+
+  }
+
+
+  /* Labels */
+
+  .friends-label,
+  .press-grid strong,
+  .about-grid strong {
+
+    font-size: 12px;
+
+    margin-bottom: 6px;
+
+  }
+
+
+  /* Primary link / name */
+
+  .friends-link,
+  .press-grid a,
+  .about-grid p {
+
+    font-size: 18px;
+
+  }
+
+
+  /* Preview images */
+
+  .friends-preview {
+
+    width: 180px;
+
+    height: 120px;
+
+  }
+
+
+  /* Footer */
+
+  footer {
+
+    padding: 48px 24px;
+
+  }
+
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="/Yeah/works.html" class="logo">SHIPTON</a>
+  <nav class="top-actions">
+    <a href="/Yeah/about.html" class="pill active">About</a>
+    <a href="/Yeah/press.html" class="pill">Press</a>
+    <a href="/Yeah/friends.html" class="pill">Friends</a>
+  </nav>
+</header>
+
+<main>
+
+  <h1 class="title">(About)</h1>
+
+  <section class="about-grid">
+
+    <p>
+      <strong>Residency Artists</strong>
+      Linn Phyllis Seeger, David Varhegyi,<br>
+      Stan Buglass & Nicolaas Victor van de Lande
+    </p>
+
+    <p>
+      <strong>Artist-in-Residence</strong>
+      January – April: Linn Phyllis Seeger
+    </p>
+
+    <p>
+      <strong>Address</strong>
+      Unit B1, Studio 07, Mainyard Studios,<br>
+      Curie House, 80 Wallis Rd,<br>
+      London E9 5LN
+    </p>
+
+    <p>
+      <strong>Hours</strong>
+      By appointment only.
+    </p>
+
+    <p>
+      <strong>Contact</strong>
+      info@shipton.gallery<br>
+      IG: @shipton__
+    </p>
+
+  </section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

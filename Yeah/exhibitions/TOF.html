@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Thresholds of Flesh — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root{
+--text:#1f120c;
+--bg:#ffffff;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+--header-h:120px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+font-family:serif;
+background:var(--bg);
+color:var(--text);
+overflow:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:36px 48px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:200;
+mix-blend-mode:difference;
+}
+
+footer{
+margin-top:200px;
+padding:40px 48px;
+border-top:1px dashed rgba(0,0,0,0.25);
+font-size:14px;
+line-height:1.6;
+}
+
+.logo{
+font-family:var(--sans);
+font-size:18px;
+font-weight:700;
+letter-spacing:-0.03em;
+text-decoration:none;
+color:#fff;
+}
+
+.top-actions{
+display:flex;
+gap:28px;
+}
+
+.top-actions a{
+font-family:var(--sans);
+font-size:15px;
+font-weight:700;
+text-decoration:none;
+color:#fff;
+opacity:0.9;
+}
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:100vh;
+}
+
+.image-column,
+.text-column{
+height:100vh;
+overflow-y:auto;
+padding-top:var(--header-h);
+}
+
+.image-column{
+padding:32px;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
+
+.image-column img{
+width:100%;
+display:block;
+border-radius:6px;
+}
+
+figcaption{
+font-size:12px;
+line-height:1.4;
+margin-top:8px;
+}
+
+.text-column{
+padding:48px;
+}
+
+.title{
+font-family:var(--sans);
+font-size:clamp(4.5rem,10vw,8rem);
+line-height:.95;
+letter-spacing:-0.04em;
+margin-bottom:24px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:32px;
+}
+
+.section{
+max-width:52ch;
+font-size:14px;
+line-height:1.6;
+}
+
+@media(max-width:900px){
+
+body{overflow:auto;}
+
+main{
+grid-template-columns:1fr;
+height:auto;
+}
+
+.text-column{order:1;height:auto;padding:32px;}
+.image-column{order:2;height:auto;padding:32px;}
+
+.title{font-size:3rem;}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../works.html" class="logo">SHIPTON</a>
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<section class="image-column">
+
+<figure>
+<img src="/Yeah/images/TOF/1.webp">
+<figcaption>Pink Flushes of Flesh Blushes, 2023, Oil on Canvas, 150 x 203 cm</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/images/TOF/2.webp">
+<figcaption>Honey in the Flesh, 2023, Oil on Canvas, Oil on Canvas, 150 x 203 cm</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/images/TOF/3.webp">
+<figcaption>Veiled Vessel, 2023, Bronze and Rubber Tube, 105 x 62 x 118 cm</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/images/TOF/4.webp">
+<figcaption>Laying Lady, 2023, Wax, Silicon & Steel, 105 x 39 x 2 cm</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/images/TOF/5.webp">
+<figcaption>
+Left: Visceral Whisper, 2023, Steel Rubber, Bronze & Acrylic, 46 x 37 x 27 cm<br><br>
+Right: Contained Container, 2022, Metal, Latex, Motor & Tubing, 37 x 9 x 92 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/images/TOF/6.webp">
+<figcaption>Hooked On, 2022, Steel, 102 x 40 cm</figcaption>
+</figure>
+
+</section>
+
+<section class="text-column">
+
+<h1 class="title">Thresholds<br>of Flesh</h1>
+
+<p class="subtitle">
+Michael Pybus
+</p>
+
+<div class="section">
+
+<p>
+Shipton is pleased to present Thresholds of Flesh, an exhibition by Michael Pybus.
+</p>
+
+<p>
+Through sculpture and painting, Pybus explores the body as a mutable structure – something both architectural and vulnerable. Materials such as bronze, latex, steel and rubber evoke the tactile presence of flesh while simultaneously distancing the viewer through industrial surfaces and mechanical tension.
+</p>
+
+<p>
+The works investigate thresholds between interior and exterior, body and container, sensation and structure. Organic forms appear bound, stretched or suspended, suggesting both protection and restriction. These tensions produce a visual language where physical vulnerability and mechanical control exist simultaneously.
+</p>
+
+<p>
+By juxtaposing sensuous surfaces with rigid materials, Thresholds of Flesh considers how the body is shaped by systems of containment and pressure – both literal and psychological.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

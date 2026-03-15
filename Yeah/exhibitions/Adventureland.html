@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Adventureland — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root{
+--text:#1f120c;
+--bg:#ffffff;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+--header-h:120px;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:serif;
+background:var(--bg);
+color:var(--text);
+overflow:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:36px 48px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:200;
+mix-blend-mode:difference;
+}
+
+.logo{
+font-family:var(--sans);
+font-size:18px;
+font-weight:700;
+letter-spacing:-0.03em;
+text-decoration:none;
+color:#fff;
+}
+
+.top-actions{
+display:flex;
+gap:28px;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+.top-actions a{
+font-family:var(--sans);
+font-size:15px;
+font-weight:700;
+letter-spacing:-0.015em;
+text-decoration:none;
+color:#fff;
+opacity:0.9;
+transition:opacity .2s ease;
+}
+
+.top-actions a:hover{
+opacity:1;
+}
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:100vh;
+}
+
+.image-column,
+.text-column{
+height:100vh;
+overflow-y:auto;
+overscroll-behavior:contain;
+padding-top:var(--header-h);
+}
+
+.image-column{
+padding-left:32px;
+padding-right:32px;
+padding-bottom:32px;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
+
+.image-column img{
+width:100%;
+display:block;
+border-radius:6px;
+}
+
+figcaption{
+font-size:12px;
+line-height:1.4;
+margin-top:8px;
+}
+
+.text-column{
+padding-left:48px;
+padding-right:48px;
+padding-bottom:48px;
+}
+
+.title{
+font-family:var(--sans);
+font-size:clamp(2.5rem,5vw,8rem);
+line-height:0.95;
+letter-spacing:-0.04em;
+margin-bottom:24px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:32px;
+}
+
+.section{
+max-width:52ch;
+font-size:14px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+@media(max-width:900px){
+
+body{overflow:auto;}
+
+header{
+position:sticky;
+background:transparent;
+}
+
+main{
+grid-template-columns:1fr;
+height:auto;
+}
+
+.text-column{
+order:1;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.image-column{
+order:2;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.title{
+font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../works.html" class="logo">SHIPTON</a>
+
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+<section class="image-column">
+
+<figure>
+<img src="/Yeah/Images/Adventureland/1.webp">
+<figcaption>
+Shipton Install View, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Adventureland/2.webp">
+<figcaption>
+Joana Azevedo,<br>
+<em>We Talk of History as if There is a Future to Talk About It</em>, 2023<br>
+Steel, Found Rocking Horse<br>
+120 cm x 95 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Adventureland/3.webp">
+<figcaption>
+James Lang,<br>
+<em>The Mouth of Hell</em>, 2023<br>
+Acrylic and Collage on Canvas,<br>
+179 cm x 160 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Adventureland/4.webp">
+<figcaption>
+Campbell Mcconnell,<br>
+<em>Untitled</em>, 2023<br>
+Video, 12 cm x 7.5 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Adventureland/5.webp">
+<figcaption>
+James Lang,<br>
+<em>Percival</em>, 2024<br>
+Acrylic, Mixed Media on Canvas,<br>
+150 cm x 60 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Adventureland/6.webp">
+<figcaption>
+James Lang,<br>
+<em>Gawain</em>, 2024<br>
+Acrylic, Mixed Media on Canvas,<br>
+150 cm x 60 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Adventureland/7.webp">
+<figcaption>
+James Lang,<br>
+<em>Merlin</em>, 2024<br>
+Acrylic, Mixed Media on Canvas,<br>
+150 cm x 60 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Adventureland/8.webp">
+<figcaption>
+James Lang,<br>
+<em>St. George</em>, 2024<br>
+Acrylic, Mixed Media on Canvas,<br>
+130 cm x 100 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Adventureland/9.webp">
+<figcaption>
+Campbell Mcconnell,<br>
+<em>Untitled</em>, 2023<br>
+Video, 16.5 cm x 11 cm
+</figcaption>
+</figure>
+
+</section>
+
+<section class="text-column">
+
+<h1 class="title">Adventureland</h1>
+
+<p class="subtitle">
+Campbell Mcconnell<br>
+James Lang<br>
+Joana Azevedo
+</p>
+
+<div class="section">
+
+<p>
+Shipton is pleased to present ‘Adventureland’, a group exhibition featuring the work of Campbell Mcconnell, Joana Azevedo & James Lang.
+</p>
+
+<p>
+This exhibition recalls the essence of honour, valour, and glory, echoing the adventurous spirit of King Arthur's knights of the Round Table, where bravery outshone fear.
+</p>
+
+<p>
+Through a collection that melds myth with the quest for discovery, visitors are challenged to embrace the boldness and ambition that shaped the legends of yesteryear.
+</p>
+
+<p>
+The artworks invite viewers to journey through realms where myth and reality intertwine, inspiring a fearless pursuit of greatness.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

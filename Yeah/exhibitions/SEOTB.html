@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Soft Edge Of The Blade — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root{
+--text:#1f120c;
+--bg:#ffffff;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+--header-h:120px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+font-family:serif;
+background:var(--bg);
+color:var(--text);
+overflow:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:36px 48px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:200;
+mix-blend-mode:difference;
+}
+
+.logo{
+font-family:var(--sans);
+font-size:18px;
+font-weight:700;
+letter-spacing:-0.03em;
+text-decoration:none;
+color:#fff;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+.top-actions{
+display:flex;
+gap:28px;
+}
+
+.top-actions a{
+font-family:var(--sans);
+font-size:15px;
+font-weight:700;
+letter-spacing:-0.015em;
+text-decoration:none;
+color:#fff;
+opacity:0.9;
+transition:opacity .2s ease;
+}
+
+.top-actions a:hover{opacity:1;}
+
+/* LAYOUT */
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:100vh;
+}
+
+.image-column,
+.text-column{
+height:100vh;
+overflow-y:auto;
+overscroll-behavior:contain;
+padding-top:var(--header-h);
+}
+
+/* IMAGES */
+
+.image-column{
+padding-left:32px;
+padding-right:32px;
+padding-bottom:32px;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
+
+.image-column img{
+width:100%;
+display:block;
+border-radius:6px;
+}
+
+figcaption{
+font-size:12px;
+line-height:1.4;
+margin-top:8px;
+}
+
+/* TEXT */
+
+.text-column{
+padding-left:48px;
+padding-right:48px;
+padding-bottom:48px;
+}
+
+.title{
+font-family:var(--sans);
+font-size:clamp(4.5rem,10vw,8rem);
+line-height:0.95;
+letter-spacing:-0.04em;
+margin-bottom:24px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:32px;
+}
+
+.section{
+max-width:52ch;
+font-size:14px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+body{overflow:auto;}
+
+header{
+position:sticky;
+background:transparent;
+}
+
+main{
+grid-template-columns:1fr;
+height:auto;
+}
+
+.text-column{
+order:1;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.image-column{
+order:2;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.title{font-size:3rem;}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../works.html" class="logo">SHIPTON</a>
+
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<section class="image-column">
+
+<figure>
+<img src="/Yeah/Images/SEOTB/1.webp">
+<figcaption>Floral Design by Elle Shoel</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/2.webp">
+<figcaption>Floral Design by Elle Shoel</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/3.webp">
+<figcaption>Soft Edge of the Blade installation shot</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/4.webp">
+<figcaption>Soft Edge of the Blade installation shot</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/6.webp">
+<figcaption>Soft Edge of the Blade installation shot</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/7.webp">
+<figcaption>
+Mark Burch, <em>Don’t Wake Me This Time</em>, Acrylic on Canvas, 100 × 70 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/8.webp">
+<figcaption>
+Lucy Robson, <em>On Being An Angel</em>, Oil on Linen, 22 × 30 cm, 2023
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/9.webp">
+<figcaption>
+Charlie Henzi, <em>You Aren’t Making That Decision With My Dick In You</em>, Image printed onto fabric, acrylic paint, pen, vinyl sticker, varnish, 75 × 125 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/10.webp">
+<figcaption>
+Charlie Henzi, <em>I’m Consolidating My Assets</em>, Acrylic & oil paint, varnish, dim sum menu & photo printed on fabric, 100 × 140 cm, 2023
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/11.webp">
+<figcaption>
+Mark Burch, <em>Hours</em>, Oil on Canvas, 100 × 80 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/12.webp">
+<figcaption>
+Charlie Henzi, <em>Untitled</em>, Image printed onto satin fabric, lace ribbon, 28 × 25 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/13.webp">
+<figcaption>
+Charlie Henzi, <em>Untitled</em>, Image printed onto satin fabric, silver metal piercing, 25 × 25 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SEOTB/14.webp">
+<figcaption>
+Mark Burch, <em>Mine All Mine</em>, Oil on Canvas, 100 × 80 cm, 2024
+</figcaption>
+</figure>
+
+</section>
+<section class="text-column">
+
+<h1 class="title">Soft Edge<br>Of The Blade</h1>
+
+<p class="subtitle">
+Curated by Henrietta Scrine<br>
+2 – 23 August 2024
+</p>
+
+<div class="section">
+
+<p>
+Opening night performance by Salomé Wu & Floral design by Elle Shoel
+</p>
+
+<p>
+Since 2007, microblogging and social networking site Tumblr has provided young women with a platform to express their identity and emotional state through curated images, writings, and multimedia content. Curated by Henrietta Scrine, <em>Soft Edge of the Blade</em> delves into the intricate and often misunderstood world of internet-age girlhood, specifically focusing on the Tumblr Sad Girl aesthetic of the early 2010s.
+</p>
+
+<p>
+Tumblr Sad Girl combined elements of vintage and retro imagery, pop culture references, and feminine, often ethereal visuals to create a unique narrative of modern girlhood. <em>Soft Edge of the Blade</em> highlights the artistic beauty of the Sad Girl while also emphasising its importance as a form of emotional expression and cultural critique. Each of the exhibiting artists captures the genre’s balance between vulnerability and resilience, exploring themes of melancholy, introspection, and emotional authenticity.
+</p>
+
+<p style="text-align:center; margin:48px 0;">
+.・。.・゜✭・..・。.・゜✭・..・。.・゜✭・.
+</p>
+
+<p>
+<strong>Mark Burch</strong> (b. 1996, Trowbridge, UK) is a London-based painter whose work delves into themes of memory, nostalgia, dreams, and desire. His creative process begins with pre-existing VHS footage, films, found imagery, or his own photographs. He then edits and collages these materials to craft hazy snippets of unknown narratives on canvas with oil paint. His paintings evoke the visual language and structure of social media platforms; one painting resembles a ‘post’ on the canvas, while another evokes the sensation of scrolling.
+</p>
+
+<p>
+<strong>Yasemin Gunhos</strong> (b. 2002, Istanbul, Turkey) completed her Foundation and BA in Fine Art at Central Saint Martins. Yasemin’s artistic practice combines 3D modelling, video, photography, and installation to explore the fluid boundary between the real and the virtual, including different ways the virtual can be translated into our tangible reality. Through Yasemin’s innovative use of technology and visual storytelling, she captures the introspective and melancholic qualities central to the Sad Girl aesthetic.
+</p>
+
+<p>
+<strong>Charlie Henzi</strong> (b. 2001, Seattle, USA) is a graduate of the Royal College of Art (MA Contemporary Art Practice) and Central Saint Martins (BA Fine Art). Charlie creates highly curated collages with a painterly feel by blending images that she has photographed with her own drawings then printing them onto fabric. Through the incorporation of SMS symbology like emojis, Charlie’s work both pokes fun at and epitomises digital girlhood.
+</p>
+
+<p>
+<strong>Lucy Robson</strong> (b. 1993, Johannesburg, South Africa) draws on traditional painting methods and filmic compositional devices to explore feminine archetypes, popular culture and romantic love. Her cinematic compositions exude a vintage feel that captures the nostalgia of the Tumblr Sad Girl aesthetic and the girlification of emotional violence. Lucy studied photography at the Michaelis School of Fine Art in Cape Town before working in commercial fashion photography. She recently completed her MFA in Painting at Goldsmiths, University of London.
+</p>
+
+<p>
+For all enquiries, please email info@shipton.gallery
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

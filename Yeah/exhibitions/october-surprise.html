@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>October Surprise — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root{
+--text:#1f120c;
+--bg:#ffffff;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+--header-h:120px;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+body{
+font-family:serif;
+background:var(--bg);
+color:var(--text);
+overflow:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:36px 48px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:200;
+mix-blend-mode:difference;
+}
+
+.logo{
+font-family:var(--sans);
+font-size:18px;
+font-weight:700;
+letter-spacing:-0.03em;
+text-decoration:none;
+color:#fff;
+}
+
+.top-actions{
+display:flex;
+gap:28px;
+}
+
+.top-actions a{
+font-family:var(--sans);
+font-size:15px;
+font-weight:700;
+letter-spacing:-0.015em;
+text-decoration:none;
+color:#fff;
+opacity:0.9;
+transition:opacity .2s ease;
+}
+
+.top-actions a:hover{
+opacity:1;
+}
+
+/* LAYOUT */
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:100vh;
+}
+
+.image-column,
+.text-column{
+height:100vh;
+overflow-y:auto;
+overscroll-behavior:contain;
+padding-top:var(--header-h);
+}
+
+/* IMAGES */
+
+.image-column{
+padding-left:32px;
+padding-right:32px;
+padding-bottom:32px;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
+
+.image-column img{
+width:100%;
+display:block;
+border-radius:6px;
+}
+
+figcaption{
+font-size:12px;
+line-height:1.4;
+margin-top:8px;
+}
+
+/* TEXT */
+
+.text-column{
+padding-left:48px;
+padding-right:48px;
+padding-bottom:48px;
+}
+
+.title{
+font-family:var(--sans);
+font-size:clamp(4.5rem,10vw,8rem);
+line-height:0.95;
+letter-spacing:-0.04em;
+margin-bottom:24px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:32px;
+}
+
+.section{
+max-width:52ch;
+font-size:14px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+body{overflow:auto;}
+
+header{
+position:sticky;
+background:transparent;
+}
+
+main{
+grid-template-columns:1fr;
+height:auto;
+}
+
+.text-column{
+order:1;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.image-column{
+order:2;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.title{
+font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../works.html" class="logo">SHIPTON</a>
+
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<!-- IMAGES -->
+
+<section class="image-column">
+
+<figure>
+<img src="/Yeah/Images/October/1.webp">
+<figcaption>
+Cole Denter, <em>Stephen Christopher Yaxley-Lennon (Tommy Robinson) with stage IV advanced Metastatic Melanoma</em>, Oil on expensive European fabric, 35 × 30 cm, 2023
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/2.webp">
+<figcaption>
+Titus McBeath, <em>American Sniper</em>, Multi-color Polyjet, Edition of 1 with 1 AP, 5.25 × 6 × 1 in, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/3.webp">
+<figcaption>
+Corbin Shaw, <em>Improving Non-Stop</em>, Graphite pencil and aluminium, 40 × 50 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/4.webp">
+<figcaption>
+Titus McBeath, <em>Smile</em>, Chalk from the Thames, 12 × 15 × 9 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/5.webp">
+<figcaption>
+Cole Denter, <em>Christopher Hitchens for Vanity Fair 2007 (Survival, Evasion, Resistance and Escape)</em>, Oil on expensive European fabric, 45 × 45 cm, 2022
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/6.webp">
+<figcaption>
+Corbin Shaw, <em>Kite Mark One</em>, Porcelain, 19 × 15 × 8 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/7.webp">
+<figcaption>
+Cole Denter, <em>Type D Royal British Legion poppy cross wreath Anti-Imperial Monochrome</em>, Spray paint on plastic, 89.3 × 15.5 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/8.webp">
+<figcaption>
+Corbin Shaw, <em>Half Penny 1983</em>, Leather and brass, 100 × 8.5 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/9.webp">
+<figcaption>
+Corbin Shaw, <em>Andrew</em>, Denim and resin, 38 × 28 × 9 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/10.webp">
+<figcaption>
+Titus McBeath, <em>Paul Revere and the Chamber of Secrets</em>, Multi-color Polyjet, Edition of 1 with 1 AP, 2.75 × 8.25 × 1 in, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/11.webp">
+<figcaption>October Surprise at Shipton, 2024</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/12.webp">
+<figcaption>October Surprise at Shipton, 2024</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/13.webp">
+<figcaption>October Surprise at Shipton, 2024</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/14.webp">
+<figcaption>October Surprise at Shipton, 2024</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/15.webp">
+<figcaption>October Surprise at Shipton, 2024</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/16.webp">
+<figcaption>October Surprise at Shipton, 2024</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/17.webp">
+<figcaption>October Surprise at Shipton, 2024</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/October/18.webp">
+<figcaption>October Surprise at Shipton, 2024</figcaption>
+</figure>
+
+</section>
+
+<!-- TEXT -->
+
+<section class="text-column">
+
+<h1 class="title">October<br>Surprise</h1>
+
+<p class="subtitle">
+Corbin Shaw, Cole Denter & Titus McBeath<br>
+2024
+</p>
+
+<div class="section">
+
+<p>
+Shipton presents <em>October Surprise</em>, an exhibition bringing together works by Corbin Shaw, Cole Denter and Titus McBeath.
+</p>
+
+<p>
+Taking its title from the political term referring to unexpected events staged shortly before an election, the exhibition reflects on the spectacle of political culture and its translation into contemporary visual language.
+</p>
+
+<p>
+Across sculpture, painting and installation, the artists examine symbols of nationalism, propaganda, media spectacle and public identity. Objects and imagery drawn from British and American political culture are reframed through irony, distortion and material transformation.
+</p>
+
+<p>
+The works situate political imagery within the gallery space as both artefact and critique, exploring how symbols circulate between propaganda, popular culture and contemporary art.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

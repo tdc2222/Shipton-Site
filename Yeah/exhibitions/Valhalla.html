@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Valhalla — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root{
+--text:#1f120c;
+--bg:#ffffff;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+--header-h:120px;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:serif;
+background:var(--bg);
+color:var(--text);
+overflow:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:36px 48px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:200;
+mix-blend-mode:difference;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+.logo{
+font-family:var(--sans);
+font-size:18px;
+font-weight:700;
+letter-spacing:-0.03em;
+text-decoration:none;
+color:#fff;
+}
+
+.top-actions{
+display:flex;
+gap:28px;
+}
+
+.top-actions a{
+font-family:var(--sans);
+font-size:15px;
+font-weight:700;
+letter-spacing:-0.015em;
+text-decoration:none;
+color:#fff;
+opacity:0.9;
+transition:opacity .2s ease;
+}
+
+.top-actions a:hover{
+opacity:1;
+}
+
+/* LAYOUT */
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:100vh;
+}
+
+.image-column,
+.text-column{
+height:100vh;
+overflow-y:auto;
+overscroll-behavior:contain;
+padding-top:var(--header-h);
+}
+
+/* IMAGES */
+
+.image-column{
+padding-left:32px;
+padding-right:32px;
+padding-bottom:32px;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
+
+.image-column img{
+width:100%;
+display:block;
+border-radius:6px;
+}
+
+figcaption{
+font-size:12px;
+line-height:1.4;
+margin-top:8px;
+}
+
+/* TEXT */
+
+.text-column{
+padding-left:48px;
+padding-right:48px;
+padding-bottom:48px;
+}
+
+.title{
+font-family:var(--sans);
+font-size:clamp(4.5rem,10vw,8rem);
+line-height:0.95;
+letter-spacing:-0.04em;
+margin-bottom:24px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:32px;
+}
+
+.section{
+max-width:52ch;
+font-size:14px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+body{overflow:auto;}
+
+header{
+position:sticky;
+background:transparent;
+}
+
+main{
+grid-template-columns:1fr;
+height:auto;
+}
+
+.text-column{
+order:1;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.image-column{
+order:2;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.title{
+font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../works.html" class="logo">SHIPTON</a>
+
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<section class="image-column">
+
+<figure>
+<img src="/Yeah/Images/Valhalla/1.webp">
+<figcaption>
+Harry Hugo Little, <em>Rose2</em>, 2024<br>
+Oil on Wood,<br>
+55 × 30 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Valhalla/2.webp">
+<figcaption>
+Harry Hugo Little, <em>Dove</em>, 2024<br>
+Oil on Wood,<br>
+48 × 30 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Valhalla/3.webp">
+<figcaption>
+Fjorsk, <em>Witch I</em>, 2024<br>
+Acrylic & Lacquer on Canvas<br>
+75 × 35 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Valhalla/4.webp">
+<figcaption>
+Fjorsk, <em>Witch II</em>, 2024<br>
+Acrylic & Lacquer on Canvas<br>
+75 × 35 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Valhalla/5.webp">
+<figcaption>
+Harry Hugo Little, <em>Skull3</em>, 2024<br>
+Oil on Wood<br>
+50 × 30 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Valhalla/6.webp">
+<figcaption>
+Harry Hugo Little, <em>Pistol</em>, 2024<br>
+Oil on Wood,<br>
+51 × 30 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Valhalla/7.webp">
+<figcaption>
+Fjorsk, <em>Doe</em>, 2024<br>
+Acrylic and Lacquer on Canvas<br>
+65 × 40 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Valhalla/8.webp">
+<figcaption>
+Fjorsk, <em>Amnesia</em>, 2024<br>
+Indian Ink on Canvas<br>
+80 × 60 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Valhalla/9.webp">
+<figcaption>
+Left:<br>
+Harry Hugo Little, <em>Deer</em>, 2024<br>
+Oil on Wood,<br>
+113 cm × 53 cm<br><br>
+
+Right:<br>
+Fjorsk, <em>Witch III</em>, 2024<br>
+Acrylic & Lacquer on Canvas<br>
+75 × 35 cm
+</figcaption>
+</figure>
+
+</section>
+
+
+<section class="text-column">
+
+<h1 class="title">Valhalla</h1>
+
+<p class="subtitle">
+Harry Hugo Little & Fjorsk
+</p>
+
+<div class="section">
+
+<p>
+Shipton is delighted to present ‘Valhalla’; a duo show featuring work by Harry Hugo Little & Fjorsk. This exhibition invites visitors to reflect on their personal quests for honour and glory.
+</p>
+
+<p>
+Central to the exhibition is the symbolism of the doe. This imagery encapsulates the concepts of sacrifice and the predator-prey dynamic, reflecting the tension between vulnerability and strength.
+</p>
+
+<p>
+The doe, often seen as a gentle and vulnerable creature, also embodies resilience and survival. This duality mirrors the journey to Valhalla, where the path to glory is fraught with challenges that requires both inner strength and sacrifice.
+</p>
+
+<p>
+The exhibition challenges visitors to consider their own lives in this context. Are they living in a way that pursues honor and glory? What sacrifices are they willing to make?
+</p>
+
+<p>
+By contemplating these questions, viewers engage with the timeless narrative of the hero’s journey and the pursuit of a meaningful, honourable life.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

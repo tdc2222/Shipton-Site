@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Smoking Gun — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root{
+--text:#1f120c;
+--bg:#ffffff;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+--header-h:120px;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:serif;
+background:var(--bg);
+color:var(--text);
+overflow:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:36px 48px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:200;
+mix-blend-mode:difference;
+}
+
+.logo{
+font-family:var(--sans);
+font-size:18px;
+font-weight:700;
+letter-spacing:-0.03em;
+text-decoration:none;
+color:#fff;
+}
+
+.top-actions{
+display:flex;
+gap:28px;
+}
+
+.top-actions a{
+font-family:var(--sans);
+font-size:15px;
+font-weight:700;
+letter-spacing:-0.015em;
+text-decoration:none;
+color:#fff;
+opacity:0.9;
+transition:opacity .2s ease;
+}
+
+.top-actions a:hover{
+opacity:1;
+}
+
+/* LAYOUT */
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:100vh;
+}
+
+.image-column,
+.text-column{
+height:100vh;
+overflow-y:auto;
+overscroll-behavior:contain;
+padding-top:var(--header-h);
+}
+
+/* IMAGES */
+
+.image-column{
+padding-left:32px;
+padding-right:32px;
+padding-bottom:32px;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
+
+.image-column img{
+width:100%;
+display:block;
+border-radius:6px;
+}
+
+figcaption{
+font-size:12px;
+line-height:1.4;
+margin-top:8px;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+/* TEXT */
+
+.text-column{
+padding-left:48px;
+padding-right:48px;
+padding-bottom:48px;
+}
+
+.title{
+font-family:var(--sans);
+font-size:clamp(4.5rem,10vw,8rem);
+line-height:0.95;
+letter-spacing:-0.04em;
+margin-bottom:24px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:32px;
+}
+
+.section{
+max-width:52ch;
+font-size:14px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+body{overflow:auto;}
+
+header{
+position:sticky;
+background:transparent;
+}
+
+main{
+grid-template-columns:1fr;
+height:auto;
+}
+
+.text-column{
+order:1;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.image-column{
+order:2;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.title{
+font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../works.html" class="logo">SHIPTON</a>
+
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<section class="image-column">
+
+<figure>
+<img src="/Yeah/Images/SmokingGun/1.webp">
+<figcaption>
+Shipton Install View
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SmokingGun/2.webp">
+<figcaption>
+Bora Akinciturk, <em>I'm Walkin’ Here</em>, Digital print on carpet, 68.6 x 68.6 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SmokingGun/3.webp">
+<figcaption>
+Eva Dixon, <em>Bulls Eye</em>, 2024, Reclaimed reflective strapping, thread and dart on stretcher, 26 x 26 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SmokingGun/4.webp">
+<figcaption>
+Shipton Install View
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SmokingGun/5.webp">
+<figcaption>
+Jacob Lay, <em>Our Secret</em>, Oil on canvas, 40.7 x 30.5 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SmokingGun/6.webp">
+<figcaption>
+Shipton Install View
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SmokingGun/7.webp">
+<figcaption>
+Lorena Levi, <em>After</em>, Oil on Wood, 50.8 x 39.4 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SmokingGun/8.webp">
+<figcaption>
+Patrick Quinn, <em>Seatbelt (Beatles)</em>, Acrylic and Sumi ink on Canvas, 61 x 68.6 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SmokingGun/9.webp">
+<figcaption>
+Shipton Install View
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/SmokingGun/10.webp">
+<figcaption>
+Harry Hugo Little, <em>Snake</em>, Oil on wood, 49.6 x 28 cm
+</figcaption>
+</figure>
+
+</section>
+
+<section class="text-column">
+
+<h1 class="title">Smoking<br>Gun</h1>
+
+<p class="subtitle">
+Popgun x Shipton<br>
+Brooklyn, New York
+</p>
+
+<div class="section">
+
+<p>
+Shipton is pleased to present, <em>Smoking Gun</em>, a group exhibition hosted by Popgun in Brooklyn, New York.
+</p>
+
+<p>
+This is the gallery’s first international show and features work by: Fern O’Carolan, Bora Akinciturk, Eva Dixon, Harry Hugo Little, Jacob Lay, Lorena Levi, Nora Iris and Patrick Quinn.
+</p>
+
+<p>
+* * *
+</p>
+
+<p>
+The experience of the sublime usually comes about as a result of a breakdown in our interpretive schema. Coming face to face with the Pacific ocean, for example, or the poetry of Walt Whitman, it’s quite likely that the memory of cliché Instagram snapshots and of the stultifying exercises of the literature classroom, will all be demolished, overwhelmed by the force and weirdness of what we’re beholding. Thus freed momentarily from our conventional habits of perception, we manage to glimpse something that might be called Reality.
+</p>
+
+<p>
+On the opposite end of the spectrum is another sort of limit experience, defined not by the transcendence of symbolic thought but rather by its super-saturation. Apophenia, overactive pattern recognition, the overloading of existence with meanings and connections, the peeling back of the text of the world to reveal a monstrous and inescapable subtext, every detail of reality subordinate to the machinery of a massive diabolical plot. H.P. Lovecraft was the first to exploit the aesthetic potential of this uniquely modern paranoia.
+</p>
+
+<p>
+    “The most merciful thing in the world, I think,” he writes in the opening passage to his most famous story, “The Call of Cthulhu”:
+</p>
+
+<p>
+    is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age. The piecing together of evidence into a grand theory, which explains everything while vaporising our comforting illusions, overturning everything we thought was real or even possible, drawing back the curtain, revealing the demonic intelligence which is the secret master and antagonist of our world – this is the horror of the conspiracy theory. 
+</p>
+
+<p>
+    In recent years Americans across the political spectrum seem to have developed a taste for conspiracy theories, much to the embarrassment and chagrin of the shepherds of public opinion. But who would take seriously a lecture about “fake news” from the same people who lied to us about the Gulf of Tonkin Incident, about “weapons of mass destruction” in Iraq, who concocted innumerable other fables to whitewash the crimes of the political and economic elite? The reasons for the rise in conspiracy thinking are complex and varied: the collective psychic trauma of COVID-19, the Epstein scandal, renewed scrutiny of the CIA’s activities during the Cold War, the proliferation of non-mainstream perspectives through social media, the growing distrust for an intellectual establishment which seems compromised by its relationship with power. As the world increasingly resembles a nightmare, the mystical and apophenic logic of nightmares appears more and more attractive, even reasonable. Once one has seen past the glittering surface of advertisements and the pious illusions of government PR, it becomes difficult to unsee what lies beneath: a dragon, who like the World Serpent of Norse myth seems to encircle the entire globe. The more arcane iterations of conspiracy thinking typically involve some version of shapeshifting – the inhuman mimicking the human through clones, robots, holograms. Nothing can be taken at face value. Elections, pandemics, terror attacks – everything that unfolds on our smartphone screens is part of a mass deception. Corporate logos and Taylor Swift lyrics must be decoded to reveal hidden messages. Existence becomes a vast cosmic crime scene, a diagram of clues and riddles to be deciphered. 
+</p>
+<p>
+    * * * 
+</p>
+<p>
+    “Cognitive warfare,” according to a 2021 article published by the NATO Review, “integrates cyber, information, psychological, and social engineering capabilities…It takes advantage of the internet and social media to target influential individuals, specific groups, and large numbers of citizens selectively and serially in a society.” The goal? “to change not only what people think, but how they think and act,” as a means of “disrupting entire societies or alliances, by seeding doubts about governance, subverting democratic processes, triggering civil disturbances, or instigating separatist movements.” The irony about those establishment voices who condemn conspiracy theories is that they frequently rely upon unproven conspiracy-minded reasoning: subversive conspiracies, we’re told, are the result of Russian or Chinese disinformation campaigns. According to one theory, the phrase “conspiracy theory” itself was coined by the CIA in the 1960s to cast aspersions on any denunciation of their activities, to make their critics look ridiculous or insane. But, then again, are conspiracy theories actually subversive? Perhaps, after all, it’s more comforting to imagine exotic fantasies about shapeshifting extra-terrestrials than to confront the grim facts of colonial genocide, and the sordid graft and blackmail which is the daily bread of our ruling class.
+</p>
+<p>
+    * * * 
+</p>
+<p>
+    Fine art is a space where, perhaps, we might escape our collective paranoia and the sense of all-encompassing cognitive warfare of our highly politicized and media-saturated existence, preserving some measure of what Keats called negative capability – a refusal of easy narratives, an openness to uncertainty and contradiction. But what about when paranoia itself becomes the subject of art? Can we prevent ourselves from seeing each work as a scrap of evidence, a piece in a jigsaw puzzle, an encrypted suggestion, an occult invitation? When nightmares become political, and the political is nightmarish, can such things really remain safely confined to the canvas or the page? I’ll conclude with a favorite phrase of online conspiracy enthusiasts, which is the only advice I can give to the viewer: Do your own research. Reuben Dendinger is a writer based in Brooklyn, New York. His work has appeared in The Baffler, Expat, Maudlin House, Protean Magazine, DoNotResearch, and other publications. His first play, The Future of Gothic Literature, was performed in Manhattan in March, 2024. Cursed Images, his first collection of short fiction, was published by Hyperidean Press in 2023. 
+</p>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

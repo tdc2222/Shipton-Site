@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Juvenile — SHIPTON</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --text: #1f120c;
+      --bg: #ffffff;
+      --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      --header-h: 120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow: hidden;
+    }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 36px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+  mix-blend-mode: difference;
+}
+
+.logo {
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+.top-actions {
+  display: flex;
+  gap: 28px;
+}
+
+.top-actions a {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.top-actions a:hover {
+  opacity: 1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.image-column,
+.text-column {
+  height: 100vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-top: var(--header-h);
+}
+
+.image-column {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.image-column img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+figcaption {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.text-column {
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 48px;
+}
+
+.title {
+  font-family: var(--sans);
+  font-size: clamp(4.5rem, 10vw, 8rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.section {
+  max-width: 52ch;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.section h3 {
+  font-family: var(--sans);
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+footer {
+  padding: 64px;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  body { overflow: auto; }
+
+  header {
+    position: sticky;
+    background: transparent;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .text-column {
+    order: 1;
+    height: auto;
+    overflow: visible;
+    padding: 32px;
+  }
+
+  .image-column {
+    order: 2;
+    height: auto;
+    overflow: visible;
+    padding: 32px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="../works.html" class="logo">SHIPTON</a>
+  <nav class="top-actions">
+    <a href="../about.html">About</a>
+    <a href="../press.html">Press</a>
+    <a href="../friends.html">Friends</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="image-column">
+
+<figure><img src="/Yeah/Images/Juvenile/1.webp"><figcaption>Juvenile Exhibition View, 2025</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/2.webp"><figcaption>Juvenile Install View, 2025</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/3.webp"><figcaption>Sam Hutchinson, <em>RETAIL VIOLENCE</em>, 2025, Stolen gps tracked acrylic security box, rotted cherry blossom petals, resin, vehicle robbery window glass, grit, 23 × 18 × 5.5 cm</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/4.webp"><figcaption>Sam Hutchinson, <em>PROJECT PEGASUS ACID SCAR</em>, 2025, Stolen gps tracked acrylic security box, brick from crime scene, thieves blood (unknown blood type), artist’s own blood (A-), resin, 23 × 18 × 5.5 cm</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/5.webp"><figcaption>Sam Hutchinson, <em>COMPLEX CAUSES</em>, 2025, Stolen gps tracked acrylic security box, stolen credit card, vehicle robbery window glass, grit, 23 × 18 × 5.5 cm</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/6.webp"><figcaption>Sam Hutchinson, <em>Sussex Police Property Policy 1128/2017 i & ii</em>, 2025, Stolen gps tracked acrylic security box, c-type print featuring official Sussex Police eBay auction images, police evidence bag, 23 × 17.5 × 13.5 cm</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/7.webp"><figcaption>Derrelle Elijah, <em>Decide When To Smile</em>, 2025, Acrylic ink on linen, 25.5 × 25.5 cm</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/8.webp"><figcaption>Derrelle Elijah, <em>Danger, Danger. No Smile</em>, 2025, Acrylic ink on linen, 25.5 × 25.5 cm</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/9.webp"><figcaption>Derrelle Elijah, <em>Learn When To Smile</em>, 2025, Acrylic ink on linen, 25.5 × 25.5 cm</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/10.webp"><figcaption>Charlie Tallott, <em>Sometimes We Were Just Avoiding Being In The House</em>, 2025, Hahnemuhle photo rag paper, aluminium, electroplated copper, ink, lacquer, glue, glass frame, 53 × 43 cm</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/11.webp"><figcaption>Charlie Tallott, <em>I’m So in Love With You</em>, 2025, Hahnemuhle photo rag paper, aluminium, electroplated copper, ink, lacquer, glue, glass frame, 53 × 43 cm</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/12.webp"><figcaption>Charlie Tallott, <em>I Don’t Think I Can Remember Ever Feeling Like This Before</em>, 2025, Hahnemuhle photo rag paper, aluminium, electroplated copper, ink, lacquer, glue, glass frame, 53 × 43 cm</figcaption></figure>
+
+<figure><img src="/Yeah/Images/Juvenile/13.webp"><figcaption>
+Charlie Tallott, <em>Cole 2</em>, 2025, Hahnemuhle photo rag paper archival prints with glass frame, 53 × 43 cm<br>
+Charlie Tallott, <em>Cole 1</em>, 2025, Hahnemuhle photo rag paper archival prints with glass frame, 53 × 43 cm<br>
+Charlie Tallott, <em>Cole 3</em>, 2025, Hahnemuhle photo rag paper archival prints with glass frame, 53 × 43 cm
+</figcaption></figure>
+
+</section>
+
+<section class="text-column">
+
+<h1 class="title">Juvenile</h1>
+
+<p class="subtitle">
+Derrelle Elijah, Sam Hutchinson & Charlie Tallott<br>
+29.05.25 – 05.07.25
+</p>
+
+
+<div class="section">
+
+<p>
+<em>Juvenile</em> isn’t just a stage of growth. It’s an attitude: cheeky, curious, reckless, and full of potential. It’s the phase where boundaries are tested, rules are bent, and risk becomes a kind of education. In biology, a juvenile is an immature organism, still forming and unfinished. In society, it’s a label reserved for young offenders — a word that forces complexity into condemnation and turns a mistake into a permanent mark. Once labelled juvenile, the chance to become something else begins to vanish.
+</p>
+
+<p>
+For young men especially, that space of becoming is closing fast. They are expected to arrive already shaped: emotionally fluent, socially aware, fully formed. There is little room for uncertainty or softness. Mistakes aren’t part of the process — they’re treated as proof of failure. Vulnerability is misread as weakness. The awkward, volatile work of growing into a self is pushed out of sight, where it either hardens or disappears.
+</p>
+
+<p>
+And yet, that middle ground — messy, unstable, unresolved — is where transformation actually happens. Not in arrival, but in flux. Not in certainty, but in friction.
+</p>
+
+<p>
+<strong>This exhibition holds space for what the world often rushes past.</strong> It doesn’t treat becoming as a deficiency. Instead, it is viewed as a charged, volatile force where identity is forged not in spite of uncertainty, but through it.
+</p>
+
+</div>
+
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

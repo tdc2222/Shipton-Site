@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Energeia — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root{
+--text:#1f120c;
+--bg:#ffffff;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+--header-h:120px;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:serif;
+background:var(--bg);
+color:var(--text);
+overflow:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:36px 48px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:200;
+mix-blend-mode:difference;
+}
+
+footer{
+margin-top:200px;
+padding:40px 48px;
+border-top:1px dashed rgba(0,0,0,0.25);
+font-size:14px;
+line-height:1.6;
+}
+
+footer strong{
+font-family:var(--sans);
+font-weight:700;
+}
+
+.logo{
+font-family:var(--sans);
+font-size:18px;
+font-weight:700;
+letter-spacing:-0.03em;
+text-decoration:none;
+color:#fff;
+}
+
+.top-actions{
+display:flex;
+gap:28px;
+}
+
+.top-actions a{
+font-family:var(--sans);
+font-size:15px;
+font-weight:700;
+letter-spacing:-0.015em;
+text-decoration:none;
+color:#fff;
+opacity:0.9;
+transition:opacity .2s ease;
+}
+
+.top-actions a:hover{
+opacity:1;
+}
+
+/* LAYOUT */
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:100vh;
+}
+
+.image-column,
+.text-column{
+height:100vh;
+overflow-y:auto;
+overscroll-behavior:contain;
+padding-top:var(--header-h);
+}
+
+/* IMAGES */
+
+.image-column{
+padding-left:32px;
+padding-right:32px;
+padding-bottom:32px;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
+
+.image-column img{
+width:100%;
+display:block;
+border-radius:6px;
+}
+
+figcaption{
+font-size:12px;
+line-height:1.4;
+margin-top:8px;
+}
+
+/* TEXT */
+
+.text-column{
+padding-left:48px;
+padding-right:48px;
+padding-bottom:48px;
+}
+
+.title{
+font-family:var(--sans);
+font-size:clamp(4.5rem,10vw,8rem);
+line-height:0.95;
+letter-spacing:-0.04em;
+margin-bottom:24px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:32px;
+}
+
+.section{
+max-width:52ch;
+font-size:14px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+body{overflow:auto;}
+
+header{
+position:sticky;
+background:transparent;
+}
+
+main{
+grid-template-columns:1fr;
+height:auto;
+}
+
+.text-column{
+order:1;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.image-column{
+order:2;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.title{
+font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../works.html" class="logo">SHIPTON</a>
+
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<section class="image-column">
+
+<figure>
+<img src="/Yeah/Images/Energeia/1.webp">
+<figcaption>
+Shipton Install View
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Energeia/2.webp">
+<figcaption>
+Eva Dixon,<br>
+<em>Strapped In</em>, 2024<br>
+Hand and Machine Sewn Fabric, Reflective Fabric, Found Strapping, Aluminium Tape and Ratchet Straps,<br>
+62 x 38cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Energeia/3.webp">
+<figcaption>
+Salomé Wu,<br>
+<em>Arises From the Red Pool With Tails Bleeding</em>, 2023<br>
+Oil, Pastel, Chalk, Sand, Rabbit Skin Glue on Colton Duck Canvas,<br>
+55 x 95cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Energeia/4.webp">
+<figcaption>
+Ashley Cluer,<br>
+<em>When It Rains</em>, 2023<br>
+Ceramic, Acrylic and Timber,<br>
+20 x 10 x 10cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Energeia/5.webp">
+<figcaption>
+Ashley Cluer,<br>
+<em>Funky Town</em>, 2024<br>
+Cement, found Wood, Plaster, Aluminium and Oil,<br>
+27 x 20 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Energeia/6.webp">
+<figcaption>
+Ashley Cluer,<br>
+<em>I Crashed The Car</em>, 2023<br>
+Cement, Plaster, Timber and Acrylic
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Energeia/7.webp">
+<figcaption>
+Eva Dixon,<br>
+<em>Barbie Scissor Kicks</em>, 2024<br>
+Spray Paint, Vinyl, Machine and Hand Sewn Fabric and Aluminium Tape on Stretcher,<br>
+81 x 81cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Energeia/8.webp">
+<figcaption>
+Salomé Wu<br>
+<em>Glimmering Silver</em>, 2023<br>
+Oil, Pastel, Chalk on Canvas<br>
+21 x 30cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Energeia/9.webp">
+<figcaption>
+Salomé Wu,<br>
+<em>Red Rivers, Azure Flowers Grew (Triptych)</em>, 2023<br>
+Oil, Pastel, Chalk, Sand and Silver on Canvas,<br>
+21 x 51cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Energeia/10.webp">
+<figcaption>
+Eva Dixon,<br>
+<em>Wimpey Welcome Home</em>, 2024,<br>
+Pocket, Glow in the Dark Vinyl and Badge on Stretcher,<br>
+17.2 x 17.2cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Energeia/11.webp">
+<figcaption>
+Eva Dixon,<br>
+<em>Jamboree</em>, 2024<br>
+Hand and Machine Sewn Fabric and Patch on Stretcher,<br>
+9x9cm
+</figcaption>
+</figure>
+
+
+</section>  
+
+<section class="text-column">
+
+<h1 class="title">Energeia</h1>
+
+<p class="subtitle">
+Ashley Cluer, Eva Dixon & Salomé Wu
+</p>
+
+<div class="section">
+
+<p>
+Shipton is pleased to present Energeia, a group show featuring Eva Dixon, Ashley Cluer and Salomé Wu.
+</p>
+
+<p>
+‘Energeia’, the group exhibition curated by Juliet Wilson at Shipton, presents an exploration of the relationship between energy and art which, throughout art history, has been a pivotal reference in expressing our response to it. This exhibition draws inspiration from the insightful publication, ‘Art, Energy, and the Brain’ by Robert Pepperell, artist, fine art professor, and author.
+</p>
+
+<p>
+In his 2018 article, Pepperell bridges art with neuroscience, offering insights into how our brain activity contributes to our aesthetic experiences. He discusses how artists and art historians have utilised the concept of ‘energy’ to capture and communicate the viewer’s reactions to art.
+</p>
+
+<p>
+The term ‘energeia,’ originally coined by Aristotle, means ‘being-at-work’ and serves as the root for our modern word ‘energy.’ The sculptures and paintings by Eva Dixon, Ashley Cluer and Salomé Wu offer viewers an opportunity to reflect on the type of energy each piece conveys. The work will create a space for personal interpretation and emotional connection, aligning with Aristotle’s notion of ‘energeia’ as an active, experiential process.
+</p>
+
+<p>
+Explore the interplay of energy and art in Energeia at Shipton where each piece offers a unique perspective on this timeless artistic conversation.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

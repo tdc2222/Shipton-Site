@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Hinterland — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root {
+  --text: #1f120c;
+  --bg: #ffffff;
+  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --header-h: 120px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 36px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+  mix-blend-mode: difference;
+}
+
+.logo {
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-actions {
+  display: flex;
+  gap: 28px;
+}
+
+.top-actions a {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.top-actions a:hover {
+  opacity: 1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.image-column,
+.text-column {
+  height: 100vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-top: var(--header-h);
+}
+
+.image-column {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.image-column img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+figcaption {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.text-column {
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 48px;
+}
+
+.title {
+  font-family: var(--sans);
+  font-size: clamp(4.5rem, 10vw, 8rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.section {
+  max-width: 52ch;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+footer {
+  padding: 64px;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+
+body { overflow: auto; }
+
+header {
+  position: sticky;
+  background: transparent;
+}
+
+main {
+  grid-template-columns: 1fr;
+  height: auto;
+}
+
+.text-column {
+  order: 1;
+  height: auto;
+  overflow: visible;
+  padding: 32px;
+}
+
+.image-column {
+  order: 2;
+  height: auto;
+  overflow: visible;
+  padding: 32px;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../works.html" class="logo">SHIPTON</a>
+
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<section class="image-column">
+
+<figure>
+<img src="/Yeah/Images/Hinterland/1.webp">
+<figcaption>Hinterland Install View, 2025</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Hinterland/2.webp">
+<figcaption>Hinterland Install View, 2025</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Hinterland/3.webp">
+<figcaption>
+Elizabeth Dimitroff<br>
+<em>Cairn</em>, 2025<br>
+Oil on linen<br>
+61 × 51 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Hinterland/4.webp">
+<figcaption>
+Jack Whitelock<br>
+<em>Aftersun</em>, 2025<br>
+Oil and wood ash on linen<br>
+31 × 26 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Hinterland/5.webp">
+<figcaption>
+Olivia Bryant<br>
+<em>No Angel</em>, 2025<br>
+Oil and Acrylic on Canvas<br>
+70 × 100 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Hinterland/6.webp">
+<figcaption>
+Jack Whitelock<br>
+<em>It Was Always February in My Chest</em>, 2025<br>
+Oil, wood ash on linen<br>
+31 × 26 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Hinterland/7.webp">
+<figcaption>
+Wenhui Hao<br>
+<em>Veins Suturing the Swamp’s Translucent Skin</em><br>
+Oil on linen<br>
+120 × 90 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Hinterland/8.webp">
+<figcaption>
+Jack Whitelock<br>
+<em>Looking for You at the Edge of the Garden</em>, 2025<br>
+Oil, acrylic, wood ash, wood, velvet on canvas<br>
+26 × 31 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Hinterland/9.webp">
+<figcaption>
+Olivia Bryant<br>
+<em>Flash</em>, 2025<br>
+15 × 20 cm<br>
+Oil on icon panel
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Hinterland/10.webp">
+<figcaption>
+Elizabeth Dimitroff<br>
+<em>Little Sister</em>, 2025<br>
+Oil on linen<br>
+117 × 86 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/Hinterland/11.webp">
+<figcaption>
+Olivia Bryant<br>
+<em>Keycard</em>, 2025<br>
+Oil on Canvas<br>
+35.5 × 45.5 cm
+</figcaption>
+</figure>
+
+</section>
+
+<section class="text-column">
+
+<h1 class="title">Hinterland</h1>
+
+<p class="subtitle">
+Olivia Bryant, Elizabeth Dimitroff, Wenhui Hao & Jack Whitelock<br>
+06.06.25 – 28.06.25
+</p>
+
+<div class="section">
+
+<p>
+<em>Hinterland</em> refers to the territory beyond the visible centre — a place between landscapes, identities, and states of being. It describes the space outside the frame, where what appears fixed begins to shift and dissolve.
+</p>
+
+<p>
+The works in this exhibition explore that unstable territory. Across painting and object, forms emerge that feel both familiar and displaced, suspended somewhere between memory and presence.
+</p>
+
+<p>
+Landscape becomes psychological terrain. Surfaces carry traces of erosion, residue, and atmosphere. Figures appear partially concealed or fragmented, as though caught mid-transformation.
+</p>
+
+<p>
+<strong>Rather than presenting a stable point of arrival, <em>Hinterland</em> positions the viewer within a space of transition.</strong> A place where meaning remains unresolved, and where identity continues to take shape.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

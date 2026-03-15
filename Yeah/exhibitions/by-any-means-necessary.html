@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>By Any Means Necessary — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root{
+--text:#1f120c;
+--bg:#ffffff;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+--header-h:120px;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+body{
+font-family:serif;
+background:var(--bg);
+color:var(--text);
+overflow:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:36px 48px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:200;
+mix-blend-mode:difference;
+}
+
+.logo{
+font-family:var(--sans);
+font-size:18px;
+font-weight:700;
+letter-spacing:-0.03em;
+text-decoration:none;
+color:#fff;
+}
+
+.top-actions{
+display:flex;
+gap:28px;
+}
+
+.top-actions a{
+font-family:var(--sans);
+font-size:15px;
+font-weight:700;
+letter-spacing:-0.015em;
+text-decoration:none;
+color:#fff;
+opacity:0.9;
+transition:opacity .2s ease;
+}
+
+.top-actions a:hover{
+opacity:1;
+}
+
+/* LAYOUT */
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:100vh;
+}
+
+.image-column,
+.text-column{
+height:100vh;
+overflow-y:auto;
+overscroll-behavior:contain;
+padding-top:var(--header-h);
+}
+
+/* IMAGES */
+
+.image-column{
+padding-left:32px;
+padding-right:32px;
+padding-bottom:32px;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
+
+.image-column img{
+width:100%;
+display:block;
+border-radius:6px;
+}
+
+figcaption{
+font-size:12px;
+line-height:1.4;
+margin-top:8px;
+}
+
+/* TEXT */
+
+.text-column{
+padding-left:48px;
+padding-right:48px;
+padding-bottom:48px;
+}
+
+.title{
+font-family:var(--sans);
+font-size:clamp(4.5rem,10vw,8rem);
+line-height:0.95;
+letter-spacing:-0.04em;
+margin-bottom:24px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:32px;
+}
+
+.section{
+max-width:52ch;
+font-size:14px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+body{overflow:auto;}
+
+header{
+position:sticky;
+background:transparent;
+}
+
+main{
+grid-template-columns:1fr;
+height:auto;
+}
+
+.text-column{
+order:1;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.image-column{
+order:2;
+height:auto;
+overflow:visible;
+padding:32px;
+}
+
+.title{
+font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../works.html" class="logo">SHIPTON</a>
+
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<!-- IMAGES -->
+
+<section class="image-column">
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/1.webp">
+<figcaption>
+By Any Means Necessary at Shipton, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/2.webp">
+<figcaption>
+By Any Means Necessary at Shipton, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/3.webp">
+<figcaption>
+By Any Means Necessary at Shipton, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/4.webp">
+<figcaption>
+By Any Means Necessary at Shipton, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/5.webp">
+<figcaption>
+Sam Blackwood, <em>Three Shopfronts</em>, Digital print, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/6.webp">
+<figcaption>
+Gordon Hack, <em>Billboard</em>, Spray paint and airbrush on panel, 46 × 61 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/7.webp">
+<figcaption>
+Inés Ting, <em>Imprisoned in my body</em>, Digital collage of personal and found photos printed on vegan leather layered with acrylic paint, 135 × 254 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/8.webp">
+<figcaption>
+Fjorsk, <em>Untitled</em>, Indian ink and acrylic on canvas, 65 × 40 cm, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/9.webp">
+<figcaption>
+Sam Blackwood, <em>Untitled (Hatton Garden)</em>, Digital print and cigarette butts, 2024
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/10.webp">
+<figcaption>
+Nicolas Tovar, <em>Progressive (Delirium Series)</em>, Oil, diffused dye, adhesive, acrylic, silkscreen, marker, dirt, 167.6 × 137.2 cm
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/11.webp">
+<figcaption>
+Gordon Hack, <em>Pound House Ready Mix Concrete</em>, Spray paint and airbrush on panel, 31 × 41 cm, 2023
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Yeah/Images/ByAnyMeans/12.webp">
+<figcaption>
+Joanna van Son, <em>Figure with Face and Wall</em>, Oil on unprimed linen canvas, 45.5 × 120 cm
+</figcaption>
+</figure>
+
+</section>
+
+<!-- TEXT -->
+
+<section class="text-column">
+
+<h1 class="title">By Any Means<br>Necessary</h1>
+
+<p class="subtitle">
+Tattoo, Graffiti & Fine Art<br>
+Hackney Wick
+</p>
+
+<div class="section">
+
+<p>
+Shipton is pleased to present <em>By Any Means Necessary</em>, an exhibition exploring the shared visual language between tattooing, graffiti, and contemporary fine art.
+</p>
+
+<p>
+The exhibition brings together artists working across different scenes but connected through gesture, mark-making, and a refusal of traditional hierarchies between “high” and “low” culture.
+</p>
+
+<p>
+Across painting, sculpture, and installation, the works trace the movement of imagery from street to studio, examining how underground visual cultures reshape contemporary art.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>

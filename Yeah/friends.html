@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Friends — SHIPTON</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --text: #1f120c;
+      --bg: #ffffff;
+      --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      --header-h: 120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* ================= HEADER ================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 36px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 200;
+      mix-blend-mode: difference;
+    }
+
+    .logo {
+      font-family: var(--sans);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 28px;
+    }
+
+    .top-actions a {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      text-decoration: none;
+      color: #fff;
+      opacity: 0.9;
+      transition: opacity 0.2s ease;
+    }
+
+    .top-actions a:hover {
+      opacity: 1;
+    }
+
+    /* ================= LAYOUT ================= */
+
+    main {
+      padding-top: var(--header-h);
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+
+    .title {
+      font-family: var(--sans);
+      font-size: clamp(4.5rem, 10vw, 8rem);
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      margin-bottom: 64px;
+    }
+
+    .friends-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      max-width: 1100px;
+    }
+
+    .friend {
+      position: relative;
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 40ch;
+    }
+
+    .friend strong {
+      font-family: var(--sans);
+      font-weight: normal;
+      font-size: 13px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    /* ================= LINK ================= */
+
+    .friend a {
+      font-family: var(--sans);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* underline reveal */
+
+    .friend a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 1px;
+      background: currentColor;
+      transition: width 0.35s ease;
+    }
+
+    .friend:hover a::after {
+      width: 100%;
+    }
+/* ================= FOOTER ================= */
+
+
+footer {
+  margin-top: 200px;
+  padding: 40px 48px;
+  border-top: 1px dashed rgba(0,0,0,0.25);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer strong {
+  font-family: var(--sans);
+  font-weight: 700;
+}
+    /* ================= HOVER PREVIEW ================= */
+
+    .preview {
+      position: fixed;
+      width: 320px;
+      height: 400px;
+      object-fit: cover;
+      pointer-events: none;
+      opacity: 0;
+      transform: scale(0.98);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      z-index: 50;
+      border-radius: 4px;
+    }
+
+    .preview.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    footer {
+      padding: 64px 48px;
+      font-size: 12px;
+    }
+
+    /* ================= MOBILE ================= */
+
+    /* ================= MOBILE SYSTEM (GLOBAL UNIFIED) ================= */
+
+@media (max-width: 900px) {
+
+  :root {
+    --header-h: 88px;
+  }
+
+  /* Header */
+
+  header {
+
+    position: fixed;
+
+    top: 0;
+
+    padding: 22px 24px;
+
+  }
+
+  .logo {
+
+    font-size: 16px;
+
+  }
+
+  .top-actions {
+
+    gap: 18px;
+
+  }
+
+  .top-actions a {
+
+    font-size: 14px;
+
+  }
+
+
+  /* Main layout */
+
+  main {
+
+    padding-top: calc(var(--header-h) + 24px);
+
+    padding-left: 24px;
+
+    padding-right: 24px;
+
+  }
+
+
+  /* Page titles */
+
+  .title {
+
+    font-size: clamp(2.6rem, 9vw, 3.2rem);
+
+    margin-bottom: 40px;
+
+  }
+
+
+  /* Grid layout → stack vertically */
+
+  .about-grid,
+  .press-grid,
+  .friends-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 36px;
+
+  }
+
+
+  /* Labels */
+
+  .friends-label,
+  .press-grid strong,
+  .about-grid strong {
+
+    font-size: 12px;
+
+    margin-bottom: 6px;
+
+  }
+
+
+  /* Primary link / name */
+
+  .friends-link,
+  .press-grid a,
+  .about-grid p {
+
+    font-size: 18px;
+
+  }
+
+
+  /* Preview images */
+
+  .friends-preview {
+
+    width: 180px;
+
+    height: 120px;
+
+  }
+
+
+  /* Footer */
+
+  footer {
+
+    padding: 48px 24px;
+
+  }
+
+}
+
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="/Yeah/works.html" class="logo">SHIPTON</a>
+  <nav class="top-actions">
+    <a href="/Yeah/about.html">About</a>
+    <a href="/Yeah/press.html">Press</a>
+    <a href="/Yeah/friends.html">Friends</a>
+  </nav>
+</header>
+
+<main>
+
+  <h1 class="title">(Friends)</h1>
+
+  <section class="friends-grid">
+
+    <div class="friend" data-image="/Yeah/Images/friends1.png">
+      <strong>Design</strong>
+      <a href="https://www.joemunrodesign.com/" target="_blank">
+        Joe Munro Design
+      </a>
+    </div>
+
+    <div class="friend" data-image="/Yeah/Images/friends2.png">
+      <strong>Platform</strong>
+      <a href="https://www.semester9.com/" target="_blank">
+        Semester.9
+      </a>
+    </div>
+
+    <div class="friend" data-image="/Yeah/Images/friends3.png">
+      <strong>Programme</strong>
+      <a href="https://popgunart.com/" target="_blank">
+        Popgun Art
+      </a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+<!-- preview image element -->
+<img class="preview" id="preview" />
+
+<script>
+
+const preview = document.getElementById("preview");
+const friends = document.querySelectorAll(".friend");
+
+friends.forEach(friend => {
+
+  friend.addEventListener("mouseenter", () => {
+    preview.src = friend.dataset.image;
+    preview.classList.add("visible");
+  });
+
+  friend.addEventListener("mouseleave", () => {
+    preview.classList.remove("visible");
+  });
+
+  friend.addEventListener("mousemove", e => {
+
+    const offset = 24;
+
+    preview.style.left = e.clientX + offset + "px";
+    preview.style.top = e.clientY + offset + "px";
+
+  });
+
+});
+
+</script>
+
+</body>
+</html>
