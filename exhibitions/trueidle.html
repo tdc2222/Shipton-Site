@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>True Idle — SHIPTON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#ffffff">
+
+<style>
+:root {
+  --text:#1f120c;
+  --bg:#ffffff;
+  --sans:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  --header-h:120px;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow:hidden;
+}
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:36px 48px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:200;
+  mix-blend-mode:difference;
+}
+
+.logo{
+  font-family:var(--sans);
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:-0.03em;
+  text-decoration:none;
+  color:#fff;
+}
+
+.top-actions{
+  display:flex;
+  gap:28px;
+}
+
+.top-actions a{
+  font-family:var(--sans);
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:-0.015em;
+  text-decoration:none;
+  color:#fff;
+  opacity:0.9;
+}
+
+main{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  height:100vh;
+}
+
+.image-column,
+.text-column{
+  height:100vh;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  padding-top:var(--header-h);
+}
+
+/* IMAGES */
+
+.image-column{
+  padding:32px;
+  display:flex;
+  flex-direction:column;
+  gap:48px;
+}
+
+.image-column img,
+.image-column video{
+  width:100%;
+  display:block;
+  border-radius:6px;
+}
+
+figcaption{
+  font-size:12px;
+  line-height:1.4;
+  margin-top:8px;
+}
+
+/* TEXT */
+
+.text-column{
+  padding:48px;
+}
+
+.title{
+  font-family:var(--sans);
+  font-size:clamp(4.5rem,10vw,8rem);
+  line-height:0.95;
+  letter-spacing:-0.04em;
+  margin-bottom:24px;
+}
+
+.subtitle{
+  font-size:14px;
+  margin-bottom:32px;
+}
+
+.section{
+  max-width:52ch;
+  font-size:14px;
+  line-height:1.6;
+  margin-bottom:40px;
+}
+
+.section p{
+  margin-bottom:16px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+  body{overflow:auto;}
+
+  header{
+    position:sticky;
+    background:transparent;
+  }
+
+  main{
+    grid-template-columns:1fr;
+    height:auto;
+  }
+
+  .text-column{
+    order:1;
+    height:auto;
+    overflow:visible;
+    padding:32px;
+  }
+
+  .image-column{
+    order:2;
+    height:auto;
+    overflow:visible;
+    padding:32px;
+  }
+
+  .title{
+    font-size:3rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../index.html" class="logo">SHIPTON</a>
+<nav class="top-actions">
+<a href="../about.html">About</a>
+<a href="../press.html">Press</a>
+<a href="../friends.html">Friends</a>
+</nav>
+</header>
+
+<main>
+
+<!-- IMAGES -->
+
+<section class="image-column">
+
+<figure>
+<img src="/Images/trueidle/Linn-Phyllis-Seeger_true-idle_1.jpg">
+<figcaption>
+<strong>Longer windows of opportunity</strong><br>
+Car radiator, hood, wheel, screen, bungee straps, extension lead, f-clamps, video loop with sound (03’55”).
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Images/trueidle/Linn-Phyllis-Seeger_true-idle_2.jpg">
+</figure>
+
+<figure>
+<img src="/Images/trueidle/Linn-Phyllis-Seeger_true-idle_3.jpg">
+</figure>
+
+<figure>
+<img src="/Images/trueidle/Linn-Phyllis-Seeger_true-idle_4.jpg">
+<figcaption>
+<strong>Leaning forward to look up</strong><br>
+Car door, screen, f-clamp, bungee straps, video loop with sound (01’11”).
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Images/trueidle/Linn-Phyllis-Seeger_true-idle_6.jpg">
+<figcaption>
+<strong>Concessions</strong><br>
+Sunroof, damaged screen, f-clamps, power cables, video loop with sound (00’30”).
+</figcaption>
+</figure>
+
+<figure>
+<img src="/Images/trueidle/Linn-Phyllis-Seeger_true-idle_8.jpg">
+</figure>
+
+<figure>
+<img src="/Images/trueidle/true-idle_Linn-Phyllis-Seeger_still_1.jpg">
+</figure>
+
+<figure>
+<img src="/Images/trueidle/true-idle_Linn-Phyllis-Seeger_still_3.jpg">
+</figure>
+
+<figure>
+<img src="/Images/trueidle/true-idle_Linn-Phyllis-Seeger_still_5.jpg">
+</figure>
+
+<figure>
+<img src="/Images/trueidle/true-idle_Linn-Phyllis-Seeger_still_6.jpg">
+</figure>
+
+<figure>
+<img src="/Images/trueidle/true-idle_Linn-Phyllis-Seeger_still_9.jpg">
+</figure>
+
+<figure>
+<video controls playsinline loop>
+<source src="/Images/trueidle/LPS_TRUE-IDLE_REEL.mp4" type="video/mp4">
+</video>
+</figure>
+
+</section>
+
+<!-- TEXT -->
+
+<section class="text-column">
+
+<h1 class="title">True Idle</h1>
+
+<p class="subtitle">
+Linn Phyllis Seeger<br>
+18 March 2026 – 4 April 2026
+</p>
+
+<div class="section">
+
+<p>
+Shipton is pleased to present true idle, the first UK solo exhibition by London-based artist Linn Phyllis Seeger.
+</p>
+
+<p>
+Featuring new video sculptures developed during Seeger’s studio residency at Shipton between January and March 2026, the presented works negotiate the relationship between the personal car and the personal device, drawing from the artist’s ongoing research on the entrenchment of automobility within the imaginary of Silicon Valley technologies.
+</p>
+
+<p>
+The resulting sculptures propose idle assemblages of machinery and computational memory. Syncopated short-form videos are translocated from Seeger’s iCloud archive, and embedded within reappropriated automotive components. Bereft of their original functionality as part of propulsive mechanisms and algorithmic streams, mechanical and narrative fragments are no longer geared towards motorising and maintaining vehicles, or distributing personal content.
+</p>
+
+<p>
+Forming new, non-productive synergies, Seeger’s works indulge in an agitated, yet stationary form of mobility: driving but getting nowhere, running late but never done killing time.
+</p>
+
+</div>
+
+<div class="section">
+
+<h3>Being in the passenger seat</h3>
+
+<p>
+Think about the last time you took a road trip. Were you the driver? If not, did you wish you were? The summer I met my partner, we rented a car and traveled under the hot sun, asking the highways to be bleak enough to give us the space to tell stories to one another. Just to be clear, nobody talks about the responsibilities of being in the passenger seat. A passenger cannot be sleepy - otherwise the driver, left unengaged, would have every reason to drift off. The passenger has to lead the way, checking the maps whenever even the slightest shadow of uncertainty crosses the driver’s mind. The passenger has to play music, trying to guess what makes driving easier without distracting the driver. The passenger has to constantly reinvent themselves: a passenger cannot be boring, repetitive, or spend too much time staring at their phone. In the end, there are bad passengers and good passengers.
+</p>
+
+<p>
+In her work, Linn Phyllis Seeger approaches the car, and transportation more broadly, through two key concepts, which are inevitability and faith. There is a strange negotiation of power in getting into a vehicle without being the driver, knowing that the journey does not depend on you, that something else will carry you through space, in the promise of a destination that is only imagined, not yet realized. If we imagine transportation as a kind of sublime force, faith reveals itself in the act of giving away our movement to an exoskeleton-prosthesis for our passage through the world; a space in which a different kind of temporality and spatiality, now malleable and detached from the static condition of our bodies, can be experienced and explored.
+</p>
+
+<p>
+Seeger looks to a semantic world that is (only apparently) external to digital cultures in order to investigate the only other true paradigm shift that has revolutionized human perception of time and space: the birth of the internet - and above all, the way we inhabit digital ecosystems. In the world of video games, ‘idle’ refers to a mode of play that does not require continuous interaction from the player in order to progress. In the case of ‘idle animations,’ it refers to graphic elements that continue to perform and move on screen during player inactivity. Big tech corporations imagine the billions of non-wealthy users around the world as passive players who do not realize they are generating profit for them while thinking they are in charge of their life online. Like NPCs (non-playable characters) they imagine we surrender to our destiny, have faith in whatever the algorithm shows us - an algorithm driven by advertising and the corporate need to shape people’s tastes in order to sell them something desirable in the future.
+</p>
+
+<p>
+If the landscape just outlined is real and tangible, accepting ourselves as passive players in someone else’s game is not something we can afford to concede. While the elites of Silicon Valley interpret the lives of users as those of small particles moving frantically without direction, for us, the digital space continues to redefine the qualities of our own humanity, offering new ways to understand ourselves, to redefine who we are (or to choose not to be), and to experience new forms of intimacy.
+</p>
+
+<p>
+Within this landscape, broken toys - of modernity (the automobile) and of capitalism (digital platforms) - become salvific. The vehicles in Seeger’s sculptures are exploded and decontextualized; they lose their meaning because they are no longer part of the perfect machine designed for speed and optimization. In the same way, her films devirtualize networked images. Videos from Seeger’s camera roll and screen recordings of gameplay are crystallized and pulled away from algorithmic flows. Reconfigured outside their natural state of functionality, these fragments appear as remnants of broken interfaces, no longer useful in enabling a direct form of interaction with the human being, replaced instead by a connection made possible precisely through their condition as malfunctioning objects.
+</p>
+
+<p>
+Images of sunsets, usually flattened by their excessive mechanical reproduction, recognized and already devoid of meaning when they appear in a post online, regain significance in Seeger’s videographic gesture, shot on her iPhone and reassembled within the exhibition space. The movements of a CGI car become desperate in their inability not to crash, a loop-holed destiny in which we cannot intervene, where there are no joysticks or buttons to press to get back on track.
+</p>
+
+<p>
+Seeger’s works are concerned with the emotional fabric of the internet, which is a constitutive part of human cognition today. This affective approach to digital technologies reinterprets the notion of idleness. Instead of passivity, online idleness becomes an imaginative force: an escape from hyper-productivity by retreating into an online video game, or taking a video of a sunset, or scrolling through a carefully curated personal archive. Pushing back against the passivity projected onto users by tech giants, acts of subversion within the digital ecosystems we inhabit are still possible.
+</p>
+
+<p>
+While my partner was driving that summer, I didn’t wish I were the driver. In the same way, we should observe that we are not going to be the drivers of our dear online world anytime soon. Instead, we could recognize the power and creative force that resides in the role of the one who isn’t in the position to drive. And in doing so, we may start to understand the true subversiveness of being in the passenger seat.
+</p>
+
+<p><strong>Arianna Caserta</strong></p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<strong>SHIPTON</strong><br><br>
+Unit B1, Studio 07, Mainyard Studios<br>
+Curie House, 80 Wallis Rd, London E9 5LN<br><br>
+info@shipton.gallery<br>
+Instagram: @shipton__
+</footer>
+
+</body>
+</html>
