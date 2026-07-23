@@ -116,6 +116,15 @@ main {
   border-radius: 6px;
 }
 
+.image-column .pair img {
+  width: calc(50% - 6px);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px;
+  border-radius: 6px;
+}
+.image-column .pair img:last-child { margin-right: 0; }
+
 figcaption {
   font-size: 12px;
   line-height: 1.4;
@@ -208,7 +217,13 @@ footer {
 
 <section class="image-column">
 
-<figure><img loading="lazy" decoding="async" src="/Images/Juvenile/1.webp"><figcaption>Juvenile Exhibition View, 2025</figcaption></figure>
+<figure class="pair">
+  <img loading="lazy" decoding="async" src="/Images/Juvenile/6.webp">
+  <img loading="lazy" decoding="async" src="/Images/Juvenile/10.webp">
+  <figcaption>
+    Installation views: Sam Hutchinson — <em>Sussex Police Property Policy 1128/2017 i & ii</em>, 2025; Charlie Tallott — <em>Sometimes We Were Just Avoiding Being In The House</em>, 2025.
+  </figcaption>
+</figure>
 
 <figure><img loading="lazy" decoding="async" src="/Images/Juvenile/2.webp"><figcaption>Juvenile Install View, 2025</figcaption></figure>
 
