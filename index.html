@@ -1121,28 +1121,32 @@ function updateNowShowing(index) {
 
   if (nowLabel) nowLabel.style.display = showLabel ? "" : "none";
 
+  // Clear visible state then set new text immediately to avoid a flash where content appears then disappears
   nowArtists.classList.remove("now-showing-visible");
   nowTitle.classList.remove("now-showing-visible");
 
-  setTimeout(() => {
-    if (artist) nowArtists.textContent = artist;
-    else {
-      // fallback: try to read from exhibitions list
-      const exhibits = document.querySelectorAll(".exhibit");
-      const exhibit = exhibits[index];
-      nowArtists.textContent = exhibit?.querySelector('.exhibit-body-inner')?.childNodes[0]?.textContent?.trim() || "";
-    }
+  // Immediate update (no timeout) and then animate in on next frame
+  if (artist) nowArtists.textContent = artist;
+  else {
+    const exhibits = document.querySelectorAll(".exhibit");
+    const exhibit = exhibits[index];
+    nowArtists.textContent = exhibit?.querySelector('.exhibit-body-inner')?.childNodes[0]?.textContent?.trim() || "";
+  }
 
-    if (title) nowTitle.textContent = title;
-    else {
-      const exhibits = document.querySelectorAll(".exhibit");
-      const exhibit = exhibits[index];
-      nowTitle.textContent = exhibit?.querySelector('.exhibit-title')?.textContent?.trim() || "";
-    }
+  if (title) nowTitle.textContent = title;
+  else {
+    const exhibits = document.querySelectorAll(".exhibit");
+    const exhibit = exhibits[index];
+    nowTitle.textContent = exhibit?.querySelector('.exhibit-title')?.textContent?.trim() || "";
+  }
 
-    nowArtists.classList.add("now-showing-visible");
-    nowTitle.classList.add("now-showing-visible");
-  }, 300);
+  // Use RAF to ensure the class is added after DOM update so transition runs
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      nowArtists.classList.add("now-showing-visible");
+      nowTitle.classList.add("now-showing-visible");
+    });
+  });
 }
 
 
