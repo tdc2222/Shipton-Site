@@ -79,7 +79,7 @@
 
     main{
       display:grid;
-      grid-template-columns:1fr 1fr;
+      grid-template-columns:3fr 2fr;
       height:100vh;
     }
 
@@ -97,10 +97,24 @@
       padding-bottom:32px;
       display:flex;
       flex-direction:column;
-      gap:48px;
+      gap:0;
     }
 
-    .image-column img{width:100%;display:block;border-radius:6px}
+    .image-column figure{
+      flex:1;
+      margin:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .image-column img{
+      width:auto;
+      height:100%;
+      max-width:100%;
+      object-fit:cover;
+      border-radius:6px;
+    }
 
     figcaption{font-size:12px;line-height:1.4;margin-top:8px}
 
@@ -112,22 +126,6 @@
 
     .section{max-width:52ch;font-size:14px;line-height:1.6;margin-bottom:40px}
 
-    .about-left {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .about-right figure {
-      margin: 0;
-    }
-
-    .about-right img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 6px;
-    }
 
 /* ================= FOOTER ================= */
 
@@ -281,8 +279,6 @@ footer strong {
 </header>
 
 <main>
-
-  <main>
     <section class="image-column">
       <figure>
         <img src="/Images/Shipton/gallery-front.jpg" alt="SHIPTON gallery entrance" loading="lazy" decoding="async">
@@ -321,8 +317,6 @@ footer strong {
         IG: @shipton__</p>
       </div>
     </section>
-  </main>
-
 </main>
 
 <footer>
