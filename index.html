@@ -483,7 +483,16 @@ footer strong {
     </div>
   </div>
 
-<a href="exhibitions/trueidle.html" class="slide active"
+<a href="exhibitions/people-make-plans-for-the-land.html" class="slide active"
+style="background-image:url('Images/PeopleMakePlans/installation-view-1.jpg')">
+  <div class="slide-content" data-now-showing-override="true">
+    <div class="now-showing-label">Now showing</div>
+    <div class="now-showing-artists">Nicolaas van de Lande</div>
+    <div class="now-showing-title">People Make Plans for the Land</div>
+  </div>
+</a>
+
+<a href="exhibitions/trueidle.html" class="slide"
 style="background-image:url('Images/trueidle/TrueIdleCover.jpeg')">
   <div class="slide-content">
     <div class="now-showing-label">Now showing</div>
@@ -983,6 +992,26 @@ style="background-image:url('Images/JuvenileCover.webp')">
     </div>
   </div>
 
+  <!-- 23 -->
+  <div class="exhibit">
+    <div class="exhibit-header">
+      <div class="exhibit-number">(24)</div>
+      <div class="exhibit-title">People Make Plans for the Land</div>
+    </div>
+    <div class="exhibit-body">
+      <div class="exhibit-body-inner">
+        Nicolaas van de Lande<br>
+        2026<br>
+        Solo Exhibition
+        <div class="gallery">
+          <img loading="lazy" decoding="async" src="Images/PeopleMakePlans/cover.jpg">
+          <img loading="lazy" decoding="async" src="Images/PeopleMakePlans/detail-1.jpg">
+        </div>
+        <a href="exhibitions/people-make-plans-for-the-land.html" class="view-button">View →</a>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 </main>
@@ -1077,6 +1106,23 @@ const nowArtists = document.querySelector(".now-showing-artists");
 const nowTitle = document.querySelector(".now-showing-title");
 
 function updateNowShowing(index) {
+  const slide = slides[index];
+  const slideContent = slide?.querySelector(".slide-content");
+  const override = slideContent?.dataset.nowShowingOverride === "true";
+
+  if (override) {
+    nowArtists.classList.remove("now-showing-visible");
+    nowTitle.classList.remove("now-showing-visible");
+
+    setTimeout(() => {
+      nowArtists.textContent = slideContent.querySelector(".now-showing-artists")?.textContent?.trim() || "";
+      nowTitle.textContent = slideContent.querySelector(".now-showing-title")?.textContent?.trim() || "";
+      nowArtists.classList.add("now-showing-visible");
+      nowTitle.classList.add("now-showing-visible");
+    }, 300);
+    return;
+  }
+
   const exhibits = document.querySelectorAll(".exhibit");
   if (!exhibits[index]) return;
   const exhibit = exhibits[index];
