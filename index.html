@@ -1157,12 +1157,31 @@ function updateNowShowing(index) {
     nowTitle.textContent = exhibit?.querySelector('.exhibit-title')?.textContent?.trim() || "";
   }
 
-  // Use RAF to ensure the class is added after DOM update so transition runs
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      nowArtists.classList.add("now-showing-visible");
-      nowTitle.classList.add("now-showing-visible");
-    });
+  // Write artist/title into every slide-content node so any slide's overlay can display it
+  const allSlideContents = document.querySelectorAll('.slide-content');
+  allSlideContents.forEach(sc => {
+    const artistsEl = sc.querySelector('.now-showing-artists');
+    const titleEl = sc.querySelector('.now-showing-title');
+    if (artistsEl) artistsEl.textContent = artist;
+    if (titleEl) titleEl.textContent = title;
+  });
+
+  // Show the label only on the active slide (if requested) and animate only the active ones
+  allSlideContents.forEach(sc => {
+    const labelEl = sc.querySelector('.now-showing-label');
+    const artistsEl = sc.querySelector('.now-showing-artists');
+    const titleEl = sc.querySelector('.now-showing-title');
+    const isActive = sc.closest('.slide') === slide;
+    if (labelEl) labelEl.style.display = (isActive && showLabel) ? '' : 'none';
+    if (artistsEl) artistsEl.classList.remove('now-showing-visible');
+    if (titleEl) titleEl.classList.remove('now-showing-visible');
+    if (isActive) {
+      // Animate in on next frame
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        if (artistsEl) artistsEl.classList.add('now-showing-visible');
+        if (titleEl) titleEl.classList.add('now-showing-visible');
+      }));
+    }
   });
 }
 
