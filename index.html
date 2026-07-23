@@ -1115,9 +1115,26 @@ function updateNowShowing(index) {
   if (!slide) return;
 
   // Prefer data attributes on the slide for reliable content
-  const artist = slide.dataset.artist || "";
-  const title = slide.dataset.title || "";
+  let artist = slide.dataset.artist || "";
+  let title = slide.dataset.title || "";
   const showLabel = slide.dataset.showLabel === "true";
+
+  // Also allow slide to embed its own textual nodes (.slide-title / .now-showing-*)
+  if (!artist) artist = slide.querySelector('.now-showing-artists')?.textContent?.trim() || "";
+  if (!title) title = slide.querySelector('.now-showing-title')?.textContent?.trim() || slide.querySelector('.slide-title')?.textContent?.trim() || "";
+
+  // If still missing, try to find the exhibit that matches this slide's href
+  if (!artist || !title) {
+    const slideHref = slide.getAttribute('href');
+    if (slideHref) {
+      const exhibits = Array.from(document.querySelectorAll('.exhibit'));
+      const matched = exhibits.find(ex => ex.querySelector('.view-button')?.getAttribute('href') === slideHref);
+      if (matched) {
+        if (!artist) artist = matched.querySelector('.exhibit-body-inner')?.childNodes[0]?.textContent?.trim() || artist;
+        if (!title) title = matched.querySelector('.exhibit-title')?.textContent?.trim() || title;
+      }
+    }
+  }
 
   if (nowLabel) nowLabel.style.display = showLabel ? "" : "none";
 
