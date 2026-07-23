@@ -485,7 +485,7 @@ footer strong {
 
 <a href="exhibitions/people-make-plans-for-the-land.html" class="slide active"
 style="background-image:url('Images/PeopleMakePlans/installation-view-1.jpg')">
-  <div class="slide-content" data-now-showing-override="true">
+  <div class="slide-content" data-now-showing-override="true" data-show-label="true">
     <div class="now-showing-label">Now showing</div>
     <div class="now-showing-artists">Nicolaas van de Lande</div>
     <div class="now-showing-title">People Make Plans for the Land</div>
@@ -494,24 +494,25 @@ style="background-image:url('Images/PeopleMakePlans/installation-view-1.jpg')">
 
 <a href="exhibitions/trueidle.html" class="slide"
 style="background-image:url('Images/trueidle/TrueIdleCover.jpeg')">
-  <div class="slide-content">
-    <div class="now-showing-label">Now showing</div>
-    <div class="now-showing-artists"></div>
-    <div class="now-showing-title"></div>
+  <div class="slide-content" data-now-showing-override="true" data-show-label="false">
+    <div class="now-showing-artists">Linn Phyllis Seeger</div>
+    <div class="now-showing-title">True Idle</div>
   </div>
 </a>
 
 <a href="exhibitions/not-a-threat.html" class="slide"
 style="background-image:url('Images/ThreatCover.webp')">
-  <div class="slide-content">
-    <div class="slide-title">Not A Threat, A Promise</div>
+  <div class="slide-content" data-now-showing-override="true" data-show-label="false">
+    <div class="now-showing-artists">Anna-Lena Krause, Jessica Luostarinen & Kit Reynolds</div>
+    <div class="now-showing-title">Not A Threat, A Promise</div>
   </div>
 </a>
 
 <a href="exhibitions/juvenile.html" class="slide"
 style="background-image:url('Images/JuvenileCover.webp')">
-  <div class="slide-content">
-    <div class="slide-title">Juvenile</div>
+  <div class="slide-content" data-now-showing-override="true" data-show-label="false">
+    <div class="now-showing-artists">Derrelle Elijah, Sam Hutchinson & Charlie Tallott</div>
+    <div class="now-showing-title">Juvenile</div>
   </div>
 </a>
 
@@ -1066,7 +1067,7 @@ function nextSlide() {
 /* reset timer when user interacts */
 function resetInterval() {
   clearInterval(interval);
-  interval = setInterval(nextSlide, 8000);
+  interval = setInterval(nextSlide, 5000);
 }
 
 /* start auto */
@@ -1104,6 +1105,7 @@ exhibits.forEach(ex => observer.observe(ex));
 
 const nowArtists = document.querySelector(".now-showing-artists");
 const nowTitle = document.querySelector(".now-showing-title");
+const nowLabel = document.querySelector(".now-showing-label");
 
 function updateNowShowing(index) {
   const slide = slides[index];
@@ -1111,6 +1113,10 @@ function updateNowShowing(index) {
   const override = slideContent?.dataset.nowShowingOverride === "true";
 
   if (override) {
+    // show/hide the 'Now showing' label per-slide
+    const showLabel = slideContent?.dataset.showLabel === "true";
+    if (nowLabel) nowLabel.style.display = showLabel ? "" : "none";
+
     nowArtists.classList.remove("now-showing-visible");
     nowTitle.classList.remove("now-showing-visible");
 
@@ -1131,6 +1137,7 @@ function updateNowShowing(index) {
   const title = exhibit.querySelector(".exhibit-title")
     ?.textContent?.trim() || "";
 
+  if (nowLabel) nowLabel.style.display = "none";
   nowArtists.classList.remove("now-showing-visible");
   nowTitle.classList.remove("now-showing-visible");
 
