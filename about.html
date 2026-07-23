@@ -112,6 +112,23 @@
       margin-bottom: 6px;
     }
 
+    .about-left {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .about-right figure {
+      margin: 0;
+    }
+
+    .about-right img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+
 /* ================= FOOTER ================= */
 
 
@@ -272,34 +289,43 @@ footer strong {
 
   <section class="about-grid">
 
-    <p>
-      <strong>Residency Artists</strong>
-      Linn Phyllis Seeger, David Varhegyi,<br>
-      Stan Buglass & Nicolaas Victor van de Lande
-    </p>
+    <div class="about-left">
+      <p>
+        <strong>Residency Artists</strong>
+        Linn Phyllis Seeger, David Varhegyi,<br>
+        Stan Buglass & Nicolaas Victor van de Lande
+      </p>
 
-    <p>
-      <strong>Artist-in-Residence</strong>
-      July – September: Stan Buglass
-    </p>
+      <p>
+        <strong>Artist-in-Residence</strong>
+        July – September: Stan Buglass
+      </p>
 
-    <p>
-      <strong>Address</strong>
-      Unit B1, Studio 07, Mainyard Studios,<br>
-      Curie House, 80 Wallis Rd,<br>
-      London E9 5LN
-    </p>
+      <p>
+        <strong>Address</strong>
+        Unit B1, Studio 07, Mainyard Studios,<br>
+        Curie House, 80 Wallis Rd,<br>
+        London E9 5LN
+      </p>
 
-    <p>
-      <strong>Hours</strong>
-      By appointment only.
-    </p>
+      <p>
+        <strong>Hours</strong>
+        By appointment only.
+      </p>
 
-    <p>
-      <strong>Contact</strong>
-      info@shipton.gallery<br>
-      IG: @shipton__
-    </p>
+      <p>
+        <strong>Contact</strong>
+        info@shipton.gallery<br>
+        IG: @shipton__
+      </p>
+    </div>
+
+    <div class="about-right">
+      <figure>
+        <img src="/Images/Shipton/gallery-front.jpg" alt="SHIPTON gallery entrance" loading="lazy" decoding="async">
+        <figcaption>SHIPTON, Mainyard Studios</figcaption>
+      </figure>
+    </div>
 
   </section>
 
