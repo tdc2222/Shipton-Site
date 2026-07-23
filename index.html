@@ -1114,75 +1114,54 @@ function updateNowShowing(index) {
   const slide = slides[index];
   if (!slide) return;
 
-  // Prefer data attributes on the slide for reliable content
-  let artist = slide.dataset.artist || "";
-  let title = slide.dataset.title || "";
-  const showLabel = slide.dataset.showLabel === "true";
+  // Populate each slide's overlay independently from its own data or content
+  const allSlides = Array.from(slides);
+  allSlides.forEach((s, sIndex) => {
+    let sArtist = s.dataset.artist || "";
+    let sTitle = s.dataset.title || "";
+    const sShowLabel = s.dataset.showLabel === "true";
 
-  // Also allow slide to embed its own textual nodes (.slide-title / .now-showing-*)
-  if (!artist) artist = slide.querySelector('.now-showing-artists')?.textContent?.trim() || "";
-  if (!title) title = slide.querySelector('.now-showing-title')?.textContent?.trim() || slide.querySelector('.slide-title')?.textContent?.trim() || "";
+    if (!sArtist) sArtist = s.querySelector('.now-showing-artists')?.textContent?.trim() || "";
+    if (!sTitle) sTitle = s.querySelector('.now-showing-title')?.textContent?.trim() || s.querySelector('.slide-title')?.textContent?.trim() || "";
 
-  // If still missing, try to find the exhibit that matches this slide's href
-  if (!artist || !title) {
-    const slideHref = slide.getAttribute('href');
-    if (slideHref) {
+    if ((!sArtist || !sTitle) && s.getAttribute('href')) {
+      const slideHref = s.getAttribute('href');
       const exhibits = Array.from(document.querySelectorAll('.exhibit'));
       const matched = exhibits.find(ex => ex.querySelector('.view-button')?.getAttribute('href') === slideHref);
       if (matched) {
-        if (!artist) artist = matched.querySelector('.exhibit-body-inner')?.childNodes[0]?.textContent?.trim() || artist;
-        if (!title) title = matched.querySelector('.exhibit-title')?.textContent?.trim() || title;
+        if (!sArtist) sArtist = matched.querySelector('.exhibit-body-inner')?.childNodes[0]?.textContent?.trim() || sArtist;
+        if (!sTitle) sTitle = matched.querySelector('.exhibit-title')?.textContent?.trim() || sTitle;
       }
     }
-  }
 
-  if (nowLabel) nowLabel.style.display = showLabel ? "" : "none";
-
-  // Clear visible state then set new text immediately to avoid a flash where content appears then disappears
-  nowArtists.classList.remove("now-showing-visible");
-  nowTitle.classList.remove("now-showing-visible");
-
-  // Immediate update (no timeout) and then animate in on next frame
-  if (artist) nowArtists.textContent = artist;
-  else {
-    const exhibits = document.querySelectorAll(".exhibit");
-    const exhibit = exhibits[index];
-    nowArtists.textContent = exhibit?.querySelector('.exhibit-body-inner')?.childNodes[0]?.textContent?.trim() || "";
-  }
-
-  if (title) nowTitle.textContent = title;
-  else {
-    const exhibits = document.querySelectorAll(".exhibit");
-    const exhibit = exhibits[index];
-    nowTitle.textContent = exhibit?.querySelector('.exhibit-title')?.textContent?.trim() || "";
-  }
-
-  // Write artist/title into every slide-content node so any slide's overlay can display it
-  const allSlideContents = document.querySelectorAll('.slide-content');
-  allSlideContents.forEach(sc => {
-    const artistsEl = sc.querySelector('.now-showing-artists');
-    const titleEl = sc.querySelector('.now-showing-title');
-    if (artistsEl) artistsEl.textContent = artist;
-    if (titleEl) titleEl.textContent = title;
-  });
-
-  // Show the label only on the active slide (if requested) and animate only the active ones
-  allSlideContents.forEach(sc => {
-    const labelEl = sc.querySelector('.now-showing-label');
-    const artistsEl = sc.querySelector('.now-showing-artists');
-    const titleEl = sc.querySelector('.now-showing-title');
-    const isActive = sc.closest('.slide') === slide;
-    if (labelEl) labelEl.style.display = (isActive && showLabel) ? '' : 'none';
-    if (artistsEl) artistsEl.classList.remove('now-showing-visible');
-    if (titleEl) titleEl.classList.remove('now-showing-visible');
-    if (isActive) {
-      // Animate in on next frame
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        if (artistsEl) artistsEl.classList.add('now-showing-visible');
-        if (titleEl) titleEl.classList.add('now-showing-visible');
-      }));
+    const sc = s.querySelector('.slide-content');
+    if (sc) {
+      const artistsEl = sc.querySelector('.now-showing-artists');
+      const titleEl = sc.querySelector('.now-showing-title');
+      const labelEl = sc.querySelector('.now-showing-label');
+      if (artistsEl) artistsEl.textContent = sArtist;
+      if (titleEl) titleEl.textContent = sTitle;
+      if (labelEl) labelEl.style.display = (sIndex === index && sShowLabel) ? '' : 'none';
+      // reset animation state
+      if (artistsEl) artistsEl.classList.remove('now-showing-visible');
+      if (titleEl) titleEl.classList.remove('now-showing-visible');
     }
   });
+
+  // Now animate the active slide overlay in
+  const activeSC = slide.querySelector('.slide-content');
+  const activeArtistsEl = activeSC?.querySelector('.now-showing-artists');
+  const activeTitleEl = activeSC?.querySelector('.now-showing-title');
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    if (activeArtistsEl) activeArtistsEl.classList.add('now-showing-visible');
+    if (activeTitleEl) activeTitleEl.classList.add('now-showing-visible');
+  }));
+
+  // Also update the global actors for any other UI that reads them
+  const currentArtist = slide.dataset.artist || activeArtistsEl?.textContent || "";
+  const currentTitle = slide.dataset.title || activeTitleEl?.textContent || "";
+  if (nowArtists) nowArtists.textContent = currentArtist;
+  if (nowTitle) nowTitle.textContent = currentTitle;
 }
 
 
