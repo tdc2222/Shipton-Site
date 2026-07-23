@@ -77,40 +77,40 @@
 
     /* ================= LAYOUT ================= */
 
-    main {
-      padding-top: var(--header-h);
-      padding-left: 48px;
-      padding-right: 48px;
+    main{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      height:100vh;
     }
 
-    .title {
-      font-family: var(--sans);
-      font-size: clamp(4.5rem, 10vw, 8rem);
-      letter-spacing: -0.04em;
-      line-height: 0.95;
-      margin-bottom: 64px;
+    .image-column,
+    .text-column{
+      height:100vh;
+      overflow-y:auto;
+      overscroll-behavior:contain;
+      padding-top:var(--header-h);
     }
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      max-width: 1100px;
+    .image-column{
+      padding-left:32px;
+      padding-right:32px;
+      padding-bottom:32px;
+      display:flex;
+      flex-direction:column;
+      gap:48px;
     }
 
-    .about-grid p {
-      font-size: 14px;
-      line-height: 1.6;
-      max-width: 40ch;
-    }
+    .image-column img{width:100%;display:block;border-radius:6px}
 
-    .about-grid strong {
-      font-family: var(--sans);
-      font-weight: normal;
-      font-size: 13px;
-      display: block;
-      margin-bottom: 6px;
-    }
+    figcaption{font-size:12px;line-height:1.4;margin-top:8px}
+
+    .text-column{padding-left:48px;padding-right:48px;padding-bottom:48px}
+
+    .title{font-family:var(--sans);font-size:clamp(2.4rem,4.7vw,7rem);line-height:0.95;letter-spacing:-0.04em;margin-bottom:24px}
+
+    .subtitle{font-size:14px;margin-bottom:32px}
+
+    .section{max-width:52ch;font-size:14px;line-height:1.6;margin-bottom:40px}
 
     .about-left {
       display: flex;
@@ -212,12 +212,11 @@ footer strong {
 
   .about-grid,
   .press-grid,
-  .friends-grid {
-
+  .friends-grid,
+  main {
     grid-template-columns: 1fr;
-
     gap: 36px;
-
+    height: auto;
   }
 
 
@@ -239,9 +238,7 @@ footer strong {
   .friends-link,
   .press-grid a,
   .about-grid p {
-
     font-size: 18px;
-
   }
 
 
@@ -285,49 +282,47 @@ footer strong {
 
 <main>
 
-  <h1 class="title">(About)</h1>
-
-  <section class="about-grid">
-
-    <div class="about-left">
-      <p>
-        <strong>Residency Artists</strong>
-        Linn Phyllis Seeger, David Varhegyi,<br>
-        Stan Buglass & Nicolaas Victor van de Lande
-      </p>
-
-      <p>
-        <strong>Artist-in-Residence</strong>
-        July – September: Stan Buglass
-      </p>
-
-      <p>
-        <strong>Address</strong>
-        Unit B1, Studio 07, Mainyard Studios,<br>
-        Curie House, 80 Wallis Rd,<br>
-        London E9 5LN
-      </p>
-
-      <p>
-        <strong>Hours</strong>
-        By appointment only.
-      </p>
-
-      <p>
-        <strong>Contact</strong>
-        info@shipton.gallery<br>
-        IG: @shipton__
-      </p>
-    </div>
-
-    <div class="about-right">
+  <main>
+    <section class="image-column">
       <figure>
         <img src="/Images/Shipton/gallery-front.jpg" alt="SHIPTON gallery entrance" loading="lazy" decoding="async">
         <figcaption>SHIPTON, Mainyard Studios</figcaption>
       </figure>
-    </div>
+    </section>
 
-  </section>
+    <section class="text-column">
+      <h1 class="title">About</h1>
+      <p class="subtitle">SHIPTON — Mainyard Studios</p>
+
+      <div class="section">
+        <p><strong>Residency Artists</strong><br>
+        Linn Phyllis Seeger, David Varhegyi, Stan Buglass & Nicolaas Victor van de Lande</p>
+      </div>
+
+      <div class="section">
+        <p><strong>Artist-in-Residence</strong><br>
+        July – September: Stan Buglass</p>
+      </div>
+
+      <div class="section">
+        <p><strong>Address</strong><br>
+        Unit B1, Studio 07, Mainyard Studios,<br>
+        Curie House, 80 Wallis Rd,<br>
+        London E9 5LN</p>
+      </div>
+
+      <div class="section">
+        <p><strong>Hours</strong><br>
+        By appointment only.</p>
+      </div>
+
+      <div class="section">
+        <p><strong>Contact</strong><br>
+        info@shipton.gallery<br>
+        IG: @shipton__</p>
+      </div>
+    </section>
+  </main>
 
 </main>
 
