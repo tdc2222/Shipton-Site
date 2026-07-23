@@ -1142,6 +1142,31 @@ function updateNowShowing(index) {
   }, 300);
 }
 
+
+  /* ================= MOVE NEW EXHIBITION TO TOP + RENUMBER ================= */
+  document.addEventListener('DOMContentLoaded', () => {
+    const exhibitionsSection = document.querySelector('.exhibitions');
+    if (!exhibitionsSection) return;
+
+    // Find the exhibit with this title
+    const exhibits = Array.from(exhibitionsSection.querySelectorAll('.exhibit'));
+    const target = exhibits.find(ex => ex.querySelector('.exhibit-title')?.textContent?.trim() === 'People Make Plans for the Land');
+    if (target) {
+      // Move it to be the first exhibit after the section title
+      const firstExhibit = exhibitionsSection.querySelector('.exhibit');
+      if (firstExhibit && firstExhibit !== target) {
+        exhibitionsSection.insertBefore(target, firstExhibit);
+      }
+
+      // Renumber exhibits sequentially (01, 02, ...)
+      const updatedExhibits = Array.from(exhibitionsSection.querySelectorAll('.exhibit'));
+      updatedExhibits.forEach((ex, i) => {
+        const num = String(i + 1).padStart(2, '0');
+        const numEl = ex.querySelector('.exhibit-number');
+        if (numEl) numEl.textContent = `(${num})`;
+      });
+    }
+  });
 /* initialize */
 setTimeout(() => {
   updateNowShowing(0);
