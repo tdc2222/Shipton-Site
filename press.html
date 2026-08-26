@@ -50,12 +50,19 @@ header {
 }
 
 .logo {
-  font-family: var(--sans);
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: auto;
   text-decoration: none;
-  color: #fff;
+}
+
+.logo img {
+  display: block;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 .top-actions {
@@ -257,7 +264,9 @@ footer strong {
 <body>
 
 <header>
-  <a href="index.html" class="logo">SHIPTON</a>
+  <a href="index.html" class="logo" aria-label="SHIPTON home">
+    <img src="Images/shipton-logo.png" alt="SHIPTON" loading="eager" decoding="async">
+  </a>
   <nav class="top-actions">
     <a href="about.html">About</a>
     <a href="press.html">Press</a>
