@@ -116,14 +116,18 @@ main {
   border-radius: 6px;
 }
 
-.image-column .pair img {
+.image-column .pair figure {
   width: calc(50% - 6px);
   display: inline-block;
   vertical-align: top;
   margin-right: 12px;
+}
+.image-column .pair figure img {
+  width: 100%;
+  display: block;
   border-radius: 6px;
 }
-.image-column .pair img:last-child { margin-right: 0; }
+.image-column .pair figure:last-child { margin-right: 0; }
 
 figcaption {
   font-size: 12px;
@@ -219,13 +223,16 @@ footer {
 
 <figure><img loading="lazy" decoding="async" src="/Images/Juvenile/1.webp" alt="Juvenile installation view"><figcaption>Juvenile Install View, 2025</figcaption></figure>
 
-<figure class="pair">
-  <img loading="lazy" decoding="async" src="/Images/Juvenile/6.webp">
-  <img loading="lazy" decoding="async" src="/Images/Juvenile/10.webp">
-  <figcaption>
-    Installation views: Sam Hutchinson — <em>Sussex Police Property Policy 1128/2017 i & ii</em>, 2025; Charlie Tallott — <em>Sometimes We Were Just Avoiding Being In The House</em>, 2025.
-  </figcaption>
-</figure>
+<div class="pair">
+  <figure>
+    <img loading="lazy" decoding="async" src="/Images/Juvenile/6.webp" alt="Sam Hutchinson, Sussex Police Property Policy 1128/2017 i & ii">
+    <figcaption>Installation views: Sam Hutchinson — <em>Sussex Police Property Policy 1128/2017 i & ii</em>, 2025</figcaption>
+  </figure>
+  <figure>
+    <img loading="lazy" decoding="async" src="/Images/Juvenile/10.webp" alt="Charlie Tallott, I'm So in Love With You">
+    <figcaption>Charlie Tallott — <em>I'm So in Love With You</em>, Electroplated copper offcuts from his days welding work, Hahnemuhle photo rag paper, A3 glass frame, 2025</figcaption>
+  </figure>
+</div>
 
 <figure><img loading="lazy" decoding="async" src="/Images/Juvenile/2.webp"><figcaption>Juvenile Install View, 2025</figcaption></figure>
 
