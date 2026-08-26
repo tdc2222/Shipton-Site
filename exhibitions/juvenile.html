@@ -116,18 +116,21 @@ main {
   border-radius: 6px;
 }
 
+.image-column .pair {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
 .image-column .pair figure {
-  width: calc(50% - 6px);
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 12px;
+  width: 100%;
+  display: block;
+  margin-right: 0;
 }
 .image-column .pair figure img {
   width: 100%;
   display: block;
   border-radius: 6px;
 }
-.image-column .pair figure:last-child { margin-right: 0; }
 
 figcaption {
   font-size: 12px;
