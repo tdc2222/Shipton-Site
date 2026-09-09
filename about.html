@@ -126,6 +126,10 @@
 
     .section{max-width:52ch;font-size:21px;line-height:1.6;margin-bottom:40px}
 
+    .bottom-sections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+
+    .bottom-sections .section{margin-bottom:0}
+
 
 /* ================= FOOTER ================= */
 
@@ -250,6 +254,14 @@ footer strong {
 
   }
 
+  .bottom-sections {
+
+    grid-template-columns: 1fr;
+
+    gap: 36px;
+
+  }
+
 
   /* Footer */
 
@@ -291,10 +303,10 @@ footer strong {
 
       <div class="section">
         <p><strong>Artist-in-Residence</strong><br>
-        July – October: Stan Buglass<br>
+        Stan Buglass<br>
         Opening: TEMPLE - 17th September, 6-9pm<br>
         On View: 18th September - 3rd October<br>
-        By Appointment Only</p>
+        </p>
       </div>
 
       <div class="section">
@@ -309,15 +321,17 @@ footer strong {
         London E9 5LN</p>
       </div>
 
-      <div class="section">
-        <p><strong>Hours</strong><br>
-        By appointment only.</p>
-      </div>
+      <div class="bottom-sections">
+        <div class="section">
+          <p><strong>Hours</strong><br>
+          By appointment only.</p>
+        </div>
 
-      <div class="section">
-        <p><strong>Contact</strong><br>
-        info@shipton.gallery<br>
-        IG: @shipton__</p>
+        <div class="section">
+          <p><strong>Contact</strong><br>
+          info@shipton.gallery<br>
+          IG: @shipton__</p>
+        </div>
       </div>
     </section>
 </main>
