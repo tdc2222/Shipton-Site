@@ -484,7 +484,7 @@ footer strong {
   </div>
 
 <a href="exhibitions/TEMPLE.html" class="slide active"
-style="background-image:url('Images/TEMPLE/1.webp')"
+style="background-image:url('Images/TEMPLE/Stan Buglass - Temple - image by Alexander Christie-7.jpg')"
 data-artist="Stan Buglass" data-title="TEMPLE" data-show-label="true">
   <div class="slide-content">
     <div class="now-showing-label">Now showing</div>
@@ -548,7 +548,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
       <div class="exhibit-body-inner">
         Stan Buglass<br>
         <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/TEMPLE/1.webp" alt="TEMPLE by Stan Buglass">
+          <img loading="lazy" decoding="async" src="Images/TEMPLE/Stan Buglass - Temple - image by Alexander Christie-7.jpg" alt="TEMPLE by Stan Buglass">
         </div>
         <a href="exhibitions/TEMPLE.html" class="view-button">View →</a>
       </div>
@@ -1186,31 +1186,6 @@ function updateNowShowing(index) {
   if (nowTitle) nowTitle.textContent = currentTitle;
 }
 
-
-  /* ================= MOVE NEW EXHIBITION TO TOP + RENUMBER ================= */
-  document.addEventListener('DOMContentLoaded', () => {
-    const exhibitionsSection = document.querySelector('.exhibitions');
-    if (!exhibitionsSection) return;
-
-    // Find the exhibit with this title
-    const exhibits = Array.from(exhibitionsSection.querySelectorAll('.exhibit'));
-    const target = exhibits.find(ex => ex.querySelector('.exhibit-title')?.textContent?.trim() === 'People Make Plans for the Land');
-    if (target) {
-      // Move it to be the first exhibit after the section title
-      const firstExhibit = exhibitionsSection.querySelector('.exhibit');
-      if (firstExhibit && firstExhibit !== target) {
-        exhibitionsSection.insertBefore(target, firstExhibit);
-      }
-
-      // Renumber exhibits sequentially (01, 02, ...)
-      const updatedExhibits = Array.from(exhibitionsSection.querySelectorAll('.exhibit'));
-      updatedExhibits.forEach((ex, i) => {
-        const num = String(i + 1).padStart(2, '0');
-        const numEl = ex.querySelector('.exhibit-number');
-        if (numEl) numEl.textContent = `(${num})`;
-      });
-    }
-  });
 /* initialize */
 setTimeout(() => {
   updateNowShowing(0);
