@@ -130,6 +130,14 @@ header{position:sticky;background:transparent;}
 main{grid-template-columns:1fr;height:auto;}
 .text-column{order:1;height:auto;overflow:visible;padding:32px;}
 .image-column{order:2;height:auto;overflow:visible;padding:32px;}
+.image-column img{
+  width:100%;
+  height:clamp(320px, 68vh, 760px);
+  object-fit:cover;
+  object-position:center 28%;
+  display:block;
+  border-radius:6px;
+}
 .title{font-size:3rem;}
 }
 </style>
