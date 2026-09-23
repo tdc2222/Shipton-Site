@@ -407,18 +407,23 @@ footer strong {
 @media (max-width: 900px) {
 
   .landing {
-    height: 56vh;
-    min-height: 320px;
+    height: 42vh;
+    min-height: 260px;
   }
 
   .marquee {
-    height: 20px;
+    height: 18px;
   }
 
   .slide {
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
+    background-color: #f4f4f4;
+  }
+
+  .slide::after {
+    opacity: 0.15;
   }
 
   header {
@@ -427,7 +432,7 @@ footer strong {
   }
 
   .slide-content {
-    bottom: 92px;
+    bottom: 60px;
     right: 24px;
     max-width: 85%;
   }
@@ -447,12 +452,12 @@ footer strong {
   }
 
   .dots {
-    bottom: 76px;
+    bottom: 38px;
     right: 24px;
   }
 
   .exhibitions {
-    padding: 36px 24px 72px;
+    padding: 20px 24px 72px;
   }
 
   .section-title {
@@ -561,7 +566,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
 
   <div class="section-title">Exhibitions</div>
 
-  <!-- 02 -->
+  <!-- 01 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(01)</div>
@@ -600,29 +605,27 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
   </div>
 
   <!-- 03 -->
-<div class="exhibit">
-  <div class="exhibit-header">
-    <div class="exhibit-number">(03)</div>
-    <div class="exhibit-title">True Idle</div>
-  </div>
-  <div class="exhibit-body">
-    <div class="exhibit-body-inner">
-      Linn Phyllis Seeger<br>
-      18 March 2026 – 4 April 2026<br>
-      Solo Exhibition
-
-      <div class="gallery">
-        <img loading="lazy" decoding="async" src="Images/trueidle/Linn-Phyllis-Seeger_true-idle_1.jpg">
-        <img loading="lazy" decoding="async" src="Images/trueidle/Linn-Phyllis-Seeger_true-idle_2.jpg">
-        <img loading="lazy" decoding="async" src="Images/trueidle/Linn-Phyllis-Seeger_true-idle_3.jpg">
+  <div class="exhibit">
+    <div class="exhibit-header">
+      <div class="exhibit-number">(03)</div>
+      <div class="exhibit-title">True Idle</div>
+    </div>
+    <div class="exhibit-body">
+      <div class="exhibit-body-inner">
+        Linn Phyllis Seeger<br>
+        18 March 2026 – 4 April 2026<br>
+        Solo Exhibition
+        <div class="gallery">
+          <img loading="lazy" decoding="async" src="Images/trueidle/Linn-Phyllis-Seeger_true-idle_1.jpg">
+          <img loading="lazy" decoding="async" src="Images/trueidle/Linn-Phyllis-Seeger_true-idle_2.jpg">
+          <img loading="lazy" decoding="async" src="Images/trueidle/Linn-Phyllis-Seeger_true-idle_3.jpg">
+        </div>
+        <a href="exhibitions/trueidle.html" class="view-button">View →</a>
       </div>
-
-      <a href="exhibitions/trueidle.html" class="view-button">View →</a>
     </div>
   </div>
-</div>
 
-<!-- 03 -->
+  <!-- 04 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(04)</div>
@@ -644,7 +647,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 04 -->
+  <!-- 05 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(05)</div>
@@ -663,7 +666,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 05 -->
+  <!-- 06 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(06)</div>
@@ -686,7 +689,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 06 -->
+  <!-- 07 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(07)</div>
@@ -705,7 +708,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 07 -->
+  <!-- 08 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(08)</div>
@@ -714,7 +717,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     <div class="exhibit-body">
       <div class="exhibit-body-inner">
         Curated by Isabella Greenwood<br>
-        2024<br>
+        06.12.24-06.01.25<br>
         Group Exhibition
         <div class="gallery">
           <img loading="lazy" decoding="async" src="Images/GodWilling/1.webp">
@@ -726,7 +729,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 08 -->
+  <!-- 09 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(09)</div>
@@ -747,7 +750,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 09 -->
+  <!-- 10 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(10)</div>
@@ -757,6 +760,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
       <div class="exhibit-body-inner">
         Tattoo, Graffiti & Fine Art<br>
         Hackney Wick<br>
+        08.11.24-28.11.24<br>
         Group Exhibition
         <div class="gallery">
           <img loading="lazy" decoding="async" src="Images/ByAnyMeans/1.webp">
@@ -768,7 +772,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 10 -->
+  <!-- 11 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(11)</div>
@@ -777,7 +781,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     <div class="exhibit-body">
       <div class="exhibit-body-inner">
         Corbin Shaw, Cole Denter & Titus McBeath<br>
-        2024<br>
+        12.10.24-01.11.24<br>
         Group Exhibition
         <div class="gallery">
           <img loading="lazy" decoding="async" src="Images/October/1.webp">
@@ -789,7 +793,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 11 -->
+  <!-- 12 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(12)</div>
@@ -810,7 +814,7 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 12 -->
+  <!-- 13 -->
   <div class="exhibit">
     <div class="exhibit-header">
       <div class="exhibit-number">(13)</div>
@@ -831,190 +835,45 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 25 -->
+  <!-- 14 -->
   <div class="exhibit">
     <div class="exhibit-header">
-      <div class="exhibit-number">(25)</div>
-      <div class="exhibit-title">A Dangerous Lesson</div>
+      <div class="exhibit-number">(14)</div>
+      <div class="exhibit-title">Smoking Gun</div>
     </div>
     <div class="exhibit-body">
       <div class="exhibit-body-inner">
-        Michael Pybus<br>
-        06.04.23-23.04.23<br>
-        Solo Exhibition
+        Popgun x Shipton<br>
+        Collaborative exhibition with Pop Gun<br>
+        10.05.24-20.05.24<br>
+        Group Exhibition
         <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/Adangerouslesson/1.webp">
-          <img loading="lazy" decoding="async" src="Images/Adangerouslesson/2.webp">
-          <img loading="lazy" decoding="async" src="Images/Adangerouslesson/3.webp">
+          <img loading="lazy" decoding="async" src="Images/SmokingGun/1.webp">
+          <img loading="lazy" decoding="async" src="Images/SmokingGun/2.webp">
+          <img loading="lazy" decoding="async" src="Images/SmokingGun/3.webp">
         </div>
-        <a href="exhibitions/adangerouslesson.html" class="view-button">View →</a>
+        <a href="exhibitions/smoking-gun.html" class="view-button">View →</a>
       </div>
     </div>
   </div>
 
-  <!-- 24 -->
+  <!-- 15 -->
   <div class="exhibit">
     <div class="exhibit-header">
-      <div class="exhibit-number">(24)</div>
-      <div class="exhibit-title">INSTANT DREAM HOME</div>
+      <div class="exhibit-number">(15)</div>
+      <div class="exhibit-title">Valhalla</div>
     </div>
     <div class="exhibit-body">
       <div class="exhibit-body-inner">
-        Bryony Hillman<br>
-        27.04.23-07.05.23<br>
-        Solo Exhibition
-        <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/instantdreamhome/1.webp">
-          <img loading="lazy" decoding="async" src="Images/instantdreamhome/2.webp">
-          <img loading="lazy" decoding="async" src="Images/instantdreamhome/3.webp">
-        </div>
-        <a href="exhibitions/instantdreamhome.html" class="view-button">View →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 23 -->
-  <div class="exhibit">
-    <div class="exhibit-header">
-      <div class="exhibit-number">(23)</div>
-      <div class="exhibit-title">Andreas' Gym</div>
-    </div>
-    <div class="exhibit-body">
-      <div class="exhibit-body-inner">
-        Andreas Stylianou<br>
-        11.05.23-21.05.23<br>
-        Solo Exhibition
-        <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/AndreasGym/1.webp">
-          <img loading="lazy" decoding="async" src="Images/AndreasGym/2.webp">
-        </div>
-        <a href="exhibitions/andreasgym.html" class="view-button">View →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 22 -->
-  <div class="exhibit">
-    <div class="exhibit-header">
-      <div class="exhibit-number">(22)</div>
-      <div class="exhibit-title">Thresholds of Flesh</div>
-    </div>
-    <div class="exhibit-body">
-      <div class="exhibit-body-inner">
-        Michael Pybus<br>
-        01.06.23-11.06.23<br>
-        Solo Exhibition
-        <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/TOF/1.webp">
-          <img loading="lazy" decoding="async" src="Images/TOF/2.webp">
-          <img loading="lazy" decoding="async" src="Images/TOF/3.webp">
-        </div>
-        <a href="exhibitions/TOF.html" class="view-button">View →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 21 -->
-  <div class="exhibit">
-    <div class="exhibit-header">
-      <div class="exhibit-number">(21)</div>
-      <div class="exhibit-title">Mirror Stage</div>
-    </div>
-    <div class="exhibit-body">
-      <div class="exhibit-body-inner">
-        Bora Akinciturk & Ella Fleck<br>
-        21.06.23-01.07.23<br>
+        Harry Hugo Little & Fjorsk<br>
+        22.03.24-05.04.24<br>
         Duo Exhibition
         <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/MirrorStage/1.webp">
-          <img loading="lazy" decoding="async" src="Images/MirrorStage/2.webp">
-          <img loading="lazy" decoding="async" src="Images/MirrorStage/3.webp">
+          <img loading="lazy" decoding="async" src="Images/Valhalla/1.webp">
+          <img loading="lazy" decoding="async" src="Images/Valhalla/2.webp">
+          <img loading="lazy" decoding="async" src="Images/Valhalla/3.webp">
         </div>
-        <a href="exhibitions/mirror-stage.html" class="view-button">View →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 20 -->
-  <div class="exhibit">
-    <div class="exhibit-header">
-      <div class="exhibit-number">(20)</div>
-      <div class="exhibit-title">The Bogman</div>
-    </div>
-    <div class="exhibit-body">
-      <div class="exhibit-body-inner">
-        Lily Hargreaves<br>
-        10.11.23-4.11.23<br>
-        Solo Exhibition
-        <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/Bogman/1.webp">
-          <img loading="lazy" decoding="async" src="Images/Bogman/2.webp">
-          <img loading="lazy" decoding="async" src="Images/Bogman/3.webp">
-        </div>
-        <a href="exhibitions/the-bogman.html" class="view-button">View →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 19 -->
-  <div class="exhibit">
-    <div class="exhibit-header">
-      <div class="exhibit-number">(19)</div>
-      <div class="exhibit-title">Chasing Rabbits</div>
-    </div>
-    <div class="exhibit-body">
-      <div class="exhibit-body-inner">
-        Mark Burch<br>
-        01.12.23-15.12.23<br>
-        Solo Exhibition
-        <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/ChasingRabbits/1.webp">
-          <img loading="lazy" decoding="async" src="Images/ChasingRabbits/2.webp">
-          <img loading="lazy" decoding="async" src="Images/ChasingRabbits/3.webp">
-        </div>
-        <a href="exhibitions/ChasingRabbits.html" class="view-button">View →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 18 -->
-  <div class="exhibit">
-    <div class="exhibit-header">
-      <div class="exhibit-number">(18)</div>
-      <div class="exhibit-title">Careful The Tale You Tell</div>
-    </div>
-    <div class="exhibit-body">
-      <div class="exhibit-body-inner">
-        Bora Akinciturk, Lily Bloom & Jamie John Davies<br>
-        19.01.24-02.02.24<br>
-        Group Exhibition
-        <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/CTTYT/1.webp">
-          <img loading="lazy" decoding="async" src="Images/CTTYT/2.webp">
-          <img loading="lazy" decoding="async" src="Images/CTTYT/3.webp">
-        </div>
-        <a href="exhibitions/CTTYT.html" class="view-button">View →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 17 -->
-  <div class="exhibit">
-    <div class="exhibit-header">
-      <div class="exhibit-number">(17)</div>
-      <div class="exhibit-title">Adventureland</div>
-    </div>
-    <div class="exhibit-body">
-      <div class="exhibit-body-inner">
-        Campbell Mcconnell, James Lang & Joana Azevedo<br>
-        09.02.24-23.02.24<br>
-        Group Exhibition
-        <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/Adventureland/1.webp">
-          <img loading="lazy" decoding="async" src="Images/Adventureland/2.webp">
-          <img loading="lazy" decoding="async" src="Images/Adventureland/3.webp">
-        </div>
-        <a href="exhibitions/Adventureland.html" class="view-button">View →</a>
+        <a href="exhibitions/Valhalla.html" class="view-button">View →</a>
       </div>
     </div>
   </div>
@@ -1041,45 +900,190 @@ data-artist="Derrelle Elijah, Sam Hutchinson & Charlie Tallott" data-title="Juve
     </div>
   </div>
 
-  <!-- 15 -->
+  <!-- 17 -->
   <div class="exhibit">
     <div class="exhibit-header">
-      <div class="exhibit-number">(15)</div>
-      <div class="exhibit-title">Valhalla</div>
+      <div class="exhibit-number">(17)</div>
+      <div class="exhibit-title">Adventureland</div>
     </div>
     <div class="exhibit-body">
       <div class="exhibit-body-inner">
-        Harry Hugo Little & Fjorsk<br>
-        22.03.24-05.04.24<br>
-        Duo Exhibition
+        Campbell Mcconnell, James Lang & Joana Azevedo<br>
+        09.02.24-23.02.24<br>
+        Group Exhibition
         <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/Valhalla/1.webp">
-          <img loading="lazy" decoding="async" src="Images/Valhalla/2.webp">
-          <img loading="lazy" decoding="async" src="Images/Valhalla/3.webp">
+          <img loading="lazy" decoding="async" src="Images/Adventureland/1.webp">
+          <img loading="lazy" decoding="async" src="Images/Adventureland/2.webp">
+          <img loading="lazy" decoding="async" src="Images/Adventureland/3.webp">
         </div>
-        <a href="exhibitions/Valhalla.html" class="view-button">View →</a>
+        <a href="exhibitions/Adventureland.html" class="view-button">View →</a>
       </div>
     </div>
   </div>
 
-  <!-- 14 -->
+  <!-- 18 -->
   <div class="exhibit">
     <div class="exhibit-header">
-      <div class="exhibit-number">(14)</div>
-      <div class="exhibit-title">Smoking Gun</div>
+      <div class="exhibit-number">(18)</div>
+      <div class="exhibit-title">Careful The Tale You Tell</div>
     </div>
     <div class="exhibit-body">
       <div class="exhibit-body-inner">
-        Popgun x Shipton<br>
-        Collaborative exhibition with Pop Gun<br>
-        10.05.24-20.05.24<br>
+        Bora Akinciturk, Lily Bloom & Jamie John Davies<br>
+        19.01.24-02.02.24<br>
         Group Exhibition
         <div class="gallery">
-          <img loading="lazy" decoding="async" src="Images/SmokingGun/1.webp">
-          <img loading="lazy" decoding="async" src="Images/SmokingGun/2.webp">
-          <img loading="lazy" decoding="async" src="Images/SmokingGun/3.webp">
+          <img loading="lazy" decoding="async" src="Images/CTTYT/1.webp">
+          <img loading="lazy" decoding="async" src="Images/CTTYT/2.webp">
+          <img loading="lazy" decoding="async" src="Images/CTTYT/3.webp">
         </div>
-        <a href="exhibitions/smoking-gun.html" class="view-button">View →</a>
+        <a href="exhibitions/CTTYT.html" class="view-button">View →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 19 -->
+  <div class="exhibit">
+    <div class="exhibit-header">
+      <div class="exhibit-number">(19)</div>
+      <div class="exhibit-title">Chasing Rabbits</div>
+    </div>
+    <div class="exhibit-body">
+      <div class="exhibit-body-inner">
+        Mark Burch<br>
+        01.12.23-15.12.23<br>
+        Solo Exhibition
+        <div class="gallery">
+          <img loading="lazy" decoding="async" src="Images/ChasingRabbits/1.webp">
+          <img loading="lazy" decoding="async" src="Images/ChasingRabbits/2.webp">
+          <img loading="lazy" decoding="async" src="Images/ChasingRabbits/3.webp">
+        </div>
+        <a href="exhibitions/ChasingRabbits.html" class="view-button">View →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 20 -->
+  <div class="exhibit">
+    <div class="exhibit-header">
+      <div class="exhibit-number">(20)</div>
+      <div class="exhibit-title">The Bogman</div>
+    </div>
+    <div class="exhibit-body">
+      <div class="exhibit-body-inner">
+        Lily Hargreaves<br>
+        10.11.23-04.11.23<br>
+        Solo Exhibition
+        <div class="gallery">
+          <img loading="lazy" decoding="async" src="Images/Bogman/1.webp">
+          <img loading="lazy" decoding="async" src="Images/Bogman/2.webp">
+          <img loading="lazy" decoding="async" src="Images/Bogman/3.webp">
+        </div>
+        <a href="exhibitions/the-bogman.html" class="view-button">View →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 21 -->
+  <div class="exhibit">
+    <div class="exhibit-header">
+      <div class="exhibit-number">(21)</div>
+      <div class="exhibit-title">Mirror Stage</div>
+    </div>
+    <div class="exhibit-body">
+      <div class="exhibit-body-inner">
+        Bora Akinciturk & Ella Fleck<br>
+        21.06.23-01.07.23<br>
+        Duo Exhibition
+        <div class="gallery">
+          <img loading="lazy" decoding="async" src="Images/MirrorStage/1.webp">
+          <img loading="lazy" decoding="async" src="Images/MirrorStage/2.webp">
+          <img loading="lazy" decoding="async" src="Images/MirrorStage/3.webp">
+        </div>
+        <a href="exhibitions/mirror-stage.html" class="view-button">View →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 22 -->
+  <div class="exhibit">
+    <div class="exhibit-header">
+      <div class="exhibit-number">(22)</div>
+      <div class="exhibit-title">Thresholds of Flesh</div>
+    </div>
+    <div class="exhibit-body">
+      <div class="exhibit-body-inner">
+        Michael Pybus<br>
+        01.06.23-11.06.23<br>
+        Solo Exhibition
+        <div class="gallery">
+          <img loading="lazy" decoding="async" src="Images/TOF/1.webp">
+          <img loading="lazy" decoding="async" src="Images/TOF/2.webp">
+          <img loading="lazy" decoding="async" src="Images/TOF/3.webp">
+        </div>
+        <a href="exhibitions/TOF.html" class="view-button">View →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 23 -->
+  <div class="exhibit">
+    <div class="exhibit-header">
+      <div class="exhibit-number">(23)</div>
+      <div class="exhibit-title">Andreas' Gym</div>
+    </div>
+    <div class="exhibit-body">
+      <div class="exhibit-body-inner">
+        Andreas Stylianou<br>
+        11.05.23-21.05.23<br>
+        Solo Exhibition
+        <div class="gallery">
+          <img loading="lazy" decoding="async" src="Images/AndreasGym/1.webp">
+          <img loading="lazy" decoding="async" src="Images/AndreasGym/2.webp">
+        </div>
+        <a href="exhibitions/andreasgym.html" class="view-button">View →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 24 -->
+  <div class="exhibit">
+    <div class="exhibit-header">
+      <div class="exhibit-number">(24)</div>
+      <div class="exhibit-title">INSTANT DREAM HOME</div>
+    </div>
+    <div class="exhibit-body">
+      <div class="exhibit-body-inner">
+        Bryony Hillman<br>
+        27.04.23-07.05.23<br>
+        Solo Exhibition
+        <div class="gallery">
+          <img loading="lazy" decoding="async" src="Images/instantdreamhome/1.webp">
+          <img loading="lazy" decoding="async" src="Images/instantdreamhome/2.webp">
+          <img loading="lazy" decoding="async" src="Images/instantdreamhome/3.webp">
+        </div>
+        <a href="exhibitions/instantdreamhome.html" class="view-button">View →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 25 -->
+  <div class="exhibit">
+    <div class="exhibit-header">
+      <div class="exhibit-number">(25)</div>
+      <div class="exhibit-title">A Dangerous Lesson</div>
+    </div>
+    <div class="exhibit-body">
+      <div class="exhibit-body-inner">
+        Michael Pybus<br>
+        06.04.23-23.04.23<br>
+        Solo Exhibition
+        <div class="gallery">
+          <img loading="lazy" decoding="async" src="Images/Adangerouslesson/1.webp">
+          <img loading="lazy" decoding="async" src="Images/Adangerouslesson/2.webp">
+          <img loading="lazy" decoding="async" src="Images/Adangerouslesson/3.webp">
+        </div>
+        <a href="exhibitions/adangerouslesson.html" class="view-button">View →</a>
       </div>
     </div>
   </div>
